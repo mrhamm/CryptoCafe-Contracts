@@ -1,0 +1,6677 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "recRetval",
+          "type": "bytes4"
+        },
+        {
+          "internalType": "bool",
+          "name": "recReverts",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes4",
+          "name": "batRetval",
+          "type": "bytes4"
+        },
+        {
+          "internalType": "bool",
+          "name": "batReverts",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256[]",
+          "name": "ids",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256[]",
+          "name": "values",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "gas",
+          "type": "uint256"
+        }
+      ],
+      "name": "BatchReceived",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "gas",
+          "type": "uint256"
+        }
+      ],
+      "name": "Received",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "ids",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "values",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155BatchReceived",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "131": "contracts/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+    "135": "contracts/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+    "26": "contracts/openzeppelin-contracts/contracts/mocks/ERC1155ReceiverMock.sol",
+    "83": "contracts/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts/contracts/mocks/ERC1155ReceiverMock.sol",
+    "exportedSymbols": {
+      "ERC1155ReceiverMock": [
+        3224
+      ],
+      "ERC165": [
+        16072
+      ],
+      "IERC1155Receiver": [
+        9266
+      ],
+      "IERC165": [
+        16398
+      ]
+    },
+    "id": 3225,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3079,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:26"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "file": "../token/ERC1155/IERC1155Receiver.sol",
+        "id": 3080,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3225,
+        "sourceUnit": 9267,
+        "src": "58:47:26",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "file": "../utils/introspection/ERC165.sol",
+        "id": 3081,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3225,
+        "sourceUnit": 16073,
+        "src": "106:43:26",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3082,
+              "name": "IERC1155Receiver",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 9266,
+              "src": "183:16:26"
+            },
+            "id": 3083,
+            "nodeType": "InheritanceSpecifier",
+            "src": "183:16:26"
+          },
+          {
+            "baseName": {
+              "id": 3084,
+              "name": "ERC165",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 16072,
+              "src": "201:6:26"
+            },
+            "id": 3085,
+            "nodeType": "InheritanceSpecifier",
+            "src": "201:6:26"
+          }
+        ],
+        "contractDependencies": [
+          9266,
+          16072,
+          16398
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3224,
+        "linearizedBaseContracts": [
+          3224,
+          16072,
+          9266,
+          16398
+        ],
+        "name": "ERC1155ReceiverMock",
+        "nameLocation": "160:19:26",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3087,
+            "mutability": "mutable",
+            "name": "_recRetval",
+            "nameLocation": "229:10:26",
+            "nodeType": "VariableDeclaration",
+            "scope": 3224,
+            "src": "214:25:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 3086,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "214:6:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 3089,
+            "mutability": "mutable",
+            "name": "_recReverts",
+            "nameLocation": "258:11:26",
+            "nodeType": "VariableDeclaration",
+            "scope": 3224,
+            "src": "245:24:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 3088,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "245:4:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 3091,
+            "mutability": "mutable",
+            "name": "_batRetval",
+            "nameLocation": "290:10:26",
+            "nodeType": "VariableDeclaration",
+            "scope": 3224,
+            "src": "275:25:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 3090,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "275:6:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 3093,
+            "mutability": "mutable",
+            "name": "_batReverts",
+            "nameLocation": "319:11:26",
+            "nodeType": "VariableDeclaration",
+            "scope": 3224,
+            "src": "306:24:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 3092,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "306:4:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "anonymous": false,
+            "id": 3107,
+            "name": "Received",
+            "nameLocation": "343:8:26",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3106,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3095,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "360:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3107,
+                  "src": "352:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3094,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "352:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3097,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "378:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3107,
+                  "src": "370:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3096,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "370:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3099,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "392:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3107,
+                  "src": "384:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3098,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "384:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3101,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "404:5:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3107,
+                  "src": "396:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3100,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "396:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3103,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "417:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3107,
+                  "src": "411:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3102,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "411:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3105,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "gas",
+                  "nameLocation": "431:3:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3107,
+                  "src": "423:11:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3104,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "423:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "351:84:26"
+            },
+            "src": "337:99:26"
+          },
+          {
+            "anonymous": false,
+            "id": 3123,
+            "name": "BatchReceived",
+            "nameLocation": "447:13:26",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3109,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "469:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3123,
+                  "src": "461:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3108,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3111,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "487:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3123,
+                  "src": "479:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3110,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3114,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "ids",
+                  "nameLocation": "503:3:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3123,
+                  "src": "493:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3112,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "493:7:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 3113,
+                    "nodeType": "ArrayTypeName",
+                    "src": "493:9:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3117,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "values",
+                  "nameLocation": "518:6:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3123,
+                  "src": "508:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3115,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "508:7:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 3116,
+                    "nodeType": "ArrayTypeName",
+                    "src": "508:9:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3119,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "532:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3123,
+                  "src": "526:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3118,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3121,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "gas",
+                  "nameLocation": "546:3:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3123,
+                  "src": "538:11:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3120,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "538:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:90:26"
+            },
+            "src": "441:110:26"
+          },
+          {
+            "body": {
+              "id": 3150,
+              "nodeType": "Block",
+              "src": "682:139:26",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3136,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3134,
+                      "name": "_recRetval",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3087,
+                      "src": "692:10:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3135,
+                      "name": "recRetval",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3125,
+                      "src": "705:9:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "src": "692:22:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "id": 3137,
+                  "nodeType": "ExpressionStatement",
+                  "src": "692:22:26"
+                },
+                {
+                  "expression": {
+                    "id": 3140,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3138,
+                      "name": "_recReverts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3089,
+                      "src": "724:11:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3139,
+                      "name": "recReverts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3127,
+                      "src": "738:10:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "724:24:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 3141,
+                  "nodeType": "ExpressionStatement",
+                  "src": "724:24:26"
+                },
+                {
+                  "expression": {
+                    "id": 3144,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3142,
+                      "name": "_batRetval",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3091,
+                      "src": "758:10:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3143,
+                      "name": "batRetval",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3129,
+                      "src": "771:9:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "src": "758:22:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "id": 3145,
+                  "nodeType": "ExpressionStatement",
+                  "src": "758:22:26"
+                },
+                {
+                  "expression": {
+                    "id": 3148,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3146,
+                      "name": "_batReverts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3093,
+                      "src": "790:11:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3147,
+                      "name": "batReverts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3131,
+                      "src": "804:10:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "790:24:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 3149,
+                  "nodeType": "ExpressionStatement",
+                  "src": "790:24:26"
+                }
+              ]
+            },
+            "id": 3151,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3132,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3125,
+                  "mutability": "mutable",
+                  "name": "recRetval",
+                  "nameLocation": "586:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3151,
+                  "src": "579:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 3124,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "579:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3127,
+                  "mutability": "mutable",
+                  "name": "recReverts",
+                  "nameLocation": "610:10:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3151,
+                  "src": "605:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3126,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "605:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3129,
+                  "mutability": "mutable",
+                  "name": "batRetval",
+                  "nameLocation": "637:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3151,
+                  "src": "630:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 3128,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "630:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3131,
+                  "mutability": "mutable",
+                  "name": "batReverts",
+                  "nameLocation": "661:10:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3151,
+                  "src": "656:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3130,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "656:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "569:108:26"
+            },
+            "returnParameters": {
+              "id": 3133,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "682:0:26"
+            },
+            "scope": 3224,
+            "src": "557:264:26",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              9247
+            ],
+            "body": {
+              "id": 3185,
+              "nodeType": "Block",
+              "src": "1042:177:26",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3169,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "1060:12:26",
+                        "subExpression": {
+                          "id": 3168,
+                          "name": "_recReverts",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3089,
+                          "src": "1061:11:26",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4552433131353552656365697665724d6f636b3a20726576657274696e67206f6e2072656365697665",
+                        "id": 3170,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1074:43:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_28b84c4ed279ffb88476777a67b487aa734a98b71976220822fd64bc4c37ff03",
+                          "typeString": "literal_string \"ERC1155ReceiverMock: reverting on receive\""
+                        },
+                        "value": "ERC1155ReceiverMock: reverting on receive"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_28b84c4ed279ffb88476777a67b487aa734a98b71976220822fd64bc4c37ff03",
+                          "typeString": "literal_string \"ERC1155ReceiverMock: reverting on receive\""
+                        }
+                      ],
+                      "id": 3167,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1052:7:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 3171,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1052:66:26",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3172,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1052:66:26"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 3174,
+                        "name": "operator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3153,
+                        "src": "1142:8:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 3175,
+                        "name": "from",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3155,
+                        "src": "1152:4:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 3176,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3157,
+                        "src": "1158:2:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 3177,
+                        "name": "value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3159,
+                        "src": "1162:5:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 3178,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3161,
+                        "src": "1169:4:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      },
+                      {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 3179,
+                          "name": "gasleft",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -7,
+                          "src": "1175:7:26",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                            "typeString": "function () view returns (uint256)"
+                          }
+                        },
+                        "id": 3180,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1175:9:26",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 3173,
+                      "name": "Received",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3107,
+                      "src": "1133:8:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$_t_uint256_$_t_bytes_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256,uint256,bytes memory,uint256)"
+                      }
+                    },
+                    "id": 3181,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1133:52:26",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3182,
+                  "nodeType": "EmitStatement",
+                  "src": "1128:57:26"
+                },
+                {
+                  "expression": {
+                    "id": 3183,
+                    "name": "_recRetval",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3087,
+                    "src": "1202:10:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "functionReturnParameters": 3166,
+                  "id": 3184,
+                  "nodeType": "Return",
+                  "src": "1195:17:26"
+                }
+              ]
+            },
+            "functionSelector": "f23a6e61",
+            "id": 3186,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onERC1155Received",
+            "nameLocation": "836:17:26",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 3163,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1005:8:26"
+            },
+            "parameters": {
+              "id": 3162,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3153,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "871:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3186,
+                  "src": "863:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3152,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "863:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3155,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "897:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3186,
+                  "src": "889:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3154,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "889:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3157,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "919:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3186,
+                  "src": "911:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3156,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "911:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3159,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "939:5:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3186,
+                  "src": "931:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3158,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "931:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3161,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "969:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3186,
+                  "src": "954:19:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3160,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "954:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "853:126:26"
+            },
+            "returnParameters": {
+              "id": 3166,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3165,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3186,
+                  "src": "1030:6:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 3164,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1030:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1029:8:26"
+            },
+            "scope": 3224,
+            "src": "827:392:26",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              9265
+            ],
+            "body": {
+              "id": 3222,
+              "nodeType": "Block",
+              "src": "1469:190:26",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3206,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "1487:12:26",
+                        "subExpression": {
+                          "id": 3205,
+                          "name": "_batReverts",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3093,
+                          "src": "1488:11:26",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4552433131353552656365697665724d6f636b3a20726576657274696e67206f6e2062617463682072656365697665",
+                        "id": 3207,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1501:49:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3e72644f1ec2e45850282bf7e40f58bed4cd632f58748543bbee2b7062f07e6f",
+                          "typeString": "literal_string \"ERC1155ReceiverMock: reverting on batch receive\""
+                        },
+                        "value": "ERC1155ReceiverMock: reverting on batch receive"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_3e72644f1ec2e45850282bf7e40f58bed4cd632f58748543bbee2b7062f07e6f",
+                          "typeString": "literal_string \"ERC1155ReceiverMock: reverting on batch receive\""
+                        }
+                      ],
+                      "id": 3204,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1479:7:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 3208,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1479:72:26",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3209,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1479:72:26"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 3211,
+                        "name": "operator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3188,
+                        "src": "1580:8:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 3212,
+                        "name": "from",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3190,
+                        "src": "1590:4:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 3213,
+                        "name": "ids",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3193,
+                        "src": "1596:3:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        }
+                      },
+                      {
+                        "id": 3214,
+                        "name": "values",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3196,
+                        "src": "1601:6:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        }
+                      },
+                      {
+                        "id": 3215,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3198,
+                        "src": "1609:4:26",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      },
+                      {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 3216,
+                          "name": "gasleft",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -7,
+                          "src": "1615:7:26",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                            "typeString": "function () view returns (uint256)"
+                          }
+                        },
+                        "id": 3217,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1615:9:26",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 3210,
+                      "name": "BatchReceived",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3123,
+                      "src": "1566:13:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_bytes_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256[] memory,uint256[] memory,bytes memory,uint256)"
+                      }
+                    },
+                    "id": 3218,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1566:59:26",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3219,
+                  "nodeType": "EmitStatement",
+                  "src": "1561:64:26"
+                },
+                {
+                  "expression": {
+                    "id": 3220,
+                    "name": "_batRetval",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3091,
+                    "src": "1642:10:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "functionReturnParameters": 3203,
+                  "id": 3221,
+                  "nodeType": "Return",
+                  "src": "1635:17:26"
+                }
+              ]
+            },
+            "functionSelector": "bc197c81",
+            "id": 3223,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onERC1155BatchReceived",
+            "nameLocation": "1234:22:26",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 3200,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1432:8:26"
+            },
+            "parameters": {
+              "id": 3199,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3188,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "1274:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "1266:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3187,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1266:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3190,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "1300:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "1292:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3189,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1292:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3193,
+                  "mutability": "mutable",
+                  "name": "ids",
+                  "nameLocation": "1333:3:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "1314:22:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3191,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1314:7:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 3192,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1314:9:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3196,
+                  "mutability": "mutable",
+                  "name": "values",
+                  "nameLocation": "1365:6:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "1346:25:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3194,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1346:7:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 3195,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1346:9:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3198,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "1396:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "1381:19:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3197,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1381:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1256:150:26"
+            },
+            "returnParameters": {
+              "id": 3203,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3202,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "1457:6:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 3201,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1457:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1456:8:26"
+            },
+            "scope": 3224,
+            "src": "1225:434:26",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3225,
+        "src": "151:1510:26"
+      }
+    ],
+    "src": "33:1629:26"
+  },
+  "bytecode": "608060405234801561001057600080fd5b506040516106d53803806106d583398101604081905261002f916100bd565b6000805491151569010000000000000000000260ff60481b1960e094851c65010000000000021664ffffffffff60281b199515156401000000000264ffffffffff199094169690941c95909517919091179290921617919091179055610110565b805180151581146100a057600080fd5b919050565b80516001600160e01b0319811681146100a057600080fd5b600080600080608085870312156100d2578384fd5b6100db856100a5565b93506100e960208601610090565b92506100f7604086016100a5565b915061010560608601610090565b905092959194509250565b6105b68061011f6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806301ffc9a714610046578063bc197c811461006e578063f23a6e611461009a575b600080fd5b610059610054366004610438565b6100ad565b60405190151581526020015b60405180910390f35b61008161007c36600461030b565b6100c7565b6040516001600160e01b03199091168152602001610065565b6100816100a83660046103c2565b6101a8565b6001600160e01b031981166301ffc9a760e01b145b919050565b600080546901000000000000000000900460ff16156101455760405162461bcd60e51b815260206004820152602f60248201527f4552433131353552656365697665724d6f636b3a20726576657274696e67206f60448201526e6e206261746368207265636569766560881b60648201526084015b60405180910390fd5b7f0bcad9224ba33b574e9c85298de2f44b4c80015a21aa5df474896444909863d889898989898989895a604051610184999897969594939291906104c5565b60405180910390a15060005465010000000000900460e01b98975050505050505050565b60008054640100000000900460ff16156102165760405162461bcd60e51b815260206004820152602960248201527f4552433131353552656365697665724d6f636b3a20726576657274696e67206f6044820152686e207265636569766560b81b606482015260840161013c565b7f20dfa9f79060c8c4d7fe892c97c71bcf6e3b63d1dcf66fea7aefc0211628cf298787878787875a6040516102519796959493929190610531565b60405180910390a15060005460e01b9695505050505050565b80356001600160a01b03811681146100c257600080fd5b60008083601f840112610292578182fd5b50813567ffffffffffffffff8111156102a9578182fd5b6020830191508360208260051b85010111156102c457600080fd5b9250929050565b60008083601f8401126102dc578182fd5b50813567ffffffffffffffff8111156102f3578182fd5b6020830191508360208285010111156102c457600080fd5b60008060008060008060008060a0898b031215610326578384fd5b61032f8961026a565b975061033d60208a0161026a565b9650604089013567ffffffffffffffff80821115610359578586fd5b6103658c838d01610281565b909850965060608b013591508082111561037d578586fd5b6103898c838d01610281565b909650945060808b01359150808211156103a1578384fd5b506103ae8b828c016102cb565b999c989b5096995094979396929594505050565b60008060008060008060a087890312156103da578182fd5b6103e38761026a565b95506103f16020880161026a565b94506040870135935060608701359250608087013567ffffffffffffffff81111561041a578283fd5b61042689828a016102cb565b979a9699509497509295939492505050565b600060208284031215610449578081fd5b81356001600160e01b031981168114610460578182fd5b9392505050565b81835260006001600160fb1b0383111561047f578081fd5b8260051b80836020870137939093016020019283525090919050565b60008284528282602086013780602084860101526020601f19601f85011685010190509392505050565b6001600160a01b038a811682528916602082015260c0604082018190526000906104f2908301898b610467565b828103606084015261050581888a610467565b9050828103608084015261051a81868861049b565b9150508260a08301529a9950505050505050505050565b6001600160a01b03888116825287166020820152604081018690526060810185905260c06080820181905260009061056c908301858761049b565b90508260a08301529897505050505050505056fea264697066735822122047ec9dea78943f7dac4fb4514d7dbbc519feedc318ca41c6cb5c22034e09437d64736f6c63430008030033",
+  "bytecodeSha1": "a753839be66a0006db70c0dc210f062844935d3e",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.3+commit.8d00100c"
+  },
+  "contractName": "ERC1155ReceiverMock",
+  "coverageMap": {
+    "branches": {
+      "131": {},
+      "135": {},
+      "26": {
+        "ERC1155ReceiverMock.onERC1155BatchReceived": {
+          "7": [
+            1487,
+            1499,
+            true
+          ]
+        },
+        "ERC1155ReceiverMock.onERC1155Received": {
+          "8": [
+            1060,
+            1072,
+            true
+          ]
+        }
+      },
+      "83": {}
+    },
+    "statements": {
+      "131": {
+        "ERC165.supportsInterface": {
+          "0": [
+            864,
+            911
+          ]
+        }
+      },
+      "135": {},
+      "26": {
+        "ERC1155ReceiverMock.onERC1155BatchReceived": {
+          "1": [
+            1479,
+            1551
+          ],
+          "2": [
+            1561,
+            1625
+          ],
+          "3": [
+            1635,
+            1652
+          ]
+        },
+        "ERC1155ReceiverMock.onERC1155Received": {
+          "4": [
+            1052,
+            1118
+          ],
+          "5": [
+            1128,
+            1185
+          ],
+          "6": [
+            1195,
+            1212
+          ]
+        }
+      },
+      "83": {}
+    }
+  },
+  "dependencies": [
+    "ERC165",
+    "IERC1155Receiver",
+    "IERC165"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c806301ffc9a714610046578063bc197c811461006e578063f23a6e611461009a575b600080fd5b610059610054366004610438565b6100ad565b60405190151581526020015b60405180910390f35b61008161007c36600461030b565b6100c7565b6040516001600160e01b03199091168152602001610065565b6100816100a83660046103c2565b6101a8565b6001600160e01b031981166301ffc9a760e01b145b919050565b600080546901000000000000000000900460ff16156101455760405162461bcd60e51b815260206004820152602f60248201527f4552433131353552656365697665724d6f636b3a20726576657274696e67206f60448201526e6e206261746368207265636569766560881b60648201526084015b60405180910390fd5b7f0bcad9224ba33b574e9c85298de2f44b4c80015a21aa5df474896444909863d889898989898989895a604051610184999897969594939291906104c5565b60405180910390a15060005465010000000000900460e01b98975050505050505050565b60008054640100000000900460ff16156102165760405162461bcd60e51b815260206004820152602960248201527f4552433131353552656365697665724d6f636b3a20726576657274696e67206f6044820152686e207265636569766560b81b606482015260840161013c565b7f20dfa9f79060c8c4d7fe892c97c71bcf6e3b63d1dcf66fea7aefc0211628cf298787878787875a6040516102519796959493929190610531565b60405180910390a15060005460e01b9695505050505050565b80356001600160a01b03811681146100c257600080fd5b60008083601f840112610292578182fd5b50813567ffffffffffffffff8111156102a9578182fd5b6020830191508360208260051b85010111156102c457600080fd5b9250929050565b60008083601f8401126102dc578182fd5b50813567ffffffffffffffff8111156102f3578182fd5b6020830191508360208285010111156102c457600080fd5b60008060008060008060008060a0898b031215610326578384fd5b61032f8961026a565b975061033d60208a0161026a565b9650604089013567ffffffffffffffff80821115610359578586fd5b6103658c838d01610281565b909850965060608b013591508082111561037d578586fd5b6103898c838d01610281565b909650945060808b01359150808211156103a1578384fd5b506103ae8b828c016102cb565b999c989b5096995094979396929594505050565b60008060008060008060a087890312156103da578182fd5b6103e38761026a565b95506103f16020880161026a565b94506040870135935060608701359250608087013567ffffffffffffffff81111561041a578283fd5b61042689828a016102cb565b979a9699509497509295939492505050565b600060208284031215610449578081fd5b81356001600160e01b031981168114610460578182fd5b9392505050565b81835260006001600160fb1b0383111561047f578081fd5b8260051b80836020870137939093016020019283525090919050565b60008284528282602086013780602084860101526020601f19601f85011685010190509392505050565b6001600160a01b038a811682528916602082015260c0604082018190526000906104f2908301898b610467565b828103606084015261050581888a610467565b9050828103608084015261051a81868861049b565b9150508260a08301529a9950505050505050505050565b6001600160a01b03888116825287166020820152604081018690526060810185905260c06080820181905260009061056c908301858761049b565b90508260a08301529897505050505050505056fea264697066735822122047ec9dea78943f7dac4fb4514d7dbbc519feedc318ca41c6cb5c22034e09437d64736f6c63430008030033",
+  "deployedSourceMap": "151:1510:26:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;763:155:131;;;;;;:::i;:::-;;:::i;:::-;;;5709:14:144;;5702:22;5684:41;;5672:2;5657:18;763:155:131;;;;;;;;1225:434:26;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;;5898:33:144;;;5880:52;;5868:2;5853:18;1225:434:26;5835:103:144;827:392:26;;;;;;:::i;:::-;;:::i;763:155:131:-;-1:-1:-1;;;;;;871:40:131;;-1:-1:-1;;;871:40:131;763:155;;;;:::o;1225:434:26:-;1457:6;1488:11;;;;;;;1487:12;1479:72;;;;-1:-1:-1;;;1479:72:26;;6555:2:144;1479:72:26;;;6537:21:144;6594:2;6574:18;;;6567:30;6633:34;6613:18;;;6606:62;-1:-1:-1;;;6684:18:144;;;6677:45;6739:19;;1479:72:26;;;;;;;;;1566:59;1580:8;1590:4;1596:3;;1601:6;;1609:4;;1615:9;1566:59;;;;;;;;;;;;;;:::i;:::-;;;;;;;;-1:-1:-1;1642:10:26;;;;;;;1225:434;;;;;;;;;;:::o;827:392::-;1030:6;1061:11;;;;;;;1060:12;1052:66;;;;-1:-1:-1;;;1052:66:26;;6145:2:144;1052:66:26;;;6127:21:144;6184:2;6164:18;;;6157:30;6223:34;6203:18;;;6196:62;-1:-1:-1;;;6274:18:144;;;6267:39;6323:19;;1052:66:26;6117:231:144;1052:66:26;1133:52;1142:8;1152:4;1158:2;1162:5;1169:4;;1175:9;1133:52;;;;;;;;;;;;:::i;:::-;;;;;;;;-1:-1:-1;1202:10:26;;;;827:392;;;;;;;;:::o;14:173:144:-;82:20;;-1:-1:-1;;;;;131:31:144;;121:42;;111:2;;177:1;174;167:12;192:395;;;319:3;312:4;304:6;300:17;296:27;286:2;;344:8;334;327:26;286:2;-1:-1:-1;374:20:144;;417:18;406:30;;403:2;;;456:8;446;439:26;403:2;500:4;492:6;488:17;476:29;;560:3;553:4;543:6;540:1;536:14;528:6;524:27;520:38;517:47;514:2;;;577:1;574;567:12;514:2;276:311;;;;;:::o;592:375::-;;;707:3;700:4;692:6;688:17;684:27;674:2;;732:8;722;715:26;674:2;-1:-1:-1;762:20:144;;805:18;794:30;;791:2;;;844:8;834;827:26;791:2;888:4;880:6;876:17;864:29;;940:3;933:4;924:6;916;912:19;908:30;905:39;902:2;;;957:1;954;947:12;972:1250;;;;;;;;;1241:3;1229:9;1220:7;1216:23;1212:33;1209:2;;;1263:6;1255;1248:22;1209:2;1291:29;1310:9;1291:29;:::i;:::-;1281:39;;1339:38;1373:2;1362:9;1358:18;1339:38;:::i;:::-;1329:48;;1428:2;1417:9;1413:18;1400:32;1451:18;1492:2;1484:6;1481:14;1478:2;;;1513:6;1505;1498:22;1478:2;1557:70;1619:7;1610:6;1599:9;1595:22;1557:70;:::i;:::-;1646:8;;-1:-1:-1;1531:96:144;-1:-1:-1;1734:2:144;1719:18;;1706:32;;-1:-1:-1;1750:16:144;;;1747:2;;;1784:6;1776;1769:22;1747:2;1828:72;1892:7;1881:8;1870:9;1866:24;1828:72;:::i;:::-;1919:8;;-1:-1:-1;1802:98:144;-1:-1:-1;2007:3:144;1992:19;;1979:33;;-1:-1:-1;2024:16:144;;;2021:2;;;2058:6;2050;2043:22;2021:2;;2102:60;2154:7;2143:8;2132:9;2128:24;2102:60;:::i;:::-;1199:1023;;;;-1:-1:-1;1199:1023:144;;-1:-1:-1;1199:1023:144;;;;;;2181:8;-1:-1:-1;;;1199:1023:144:o;2227:715::-;;;;;;;2426:3;2414:9;2405:7;2401:23;2397:33;2394:2;;;2448:6;2440;2433:22;2394:2;2476:29;2495:9;2476:29;:::i;:::-;2466:39;;2524:38;2558:2;2547:9;2543:18;2524:38;:::i;:::-;2514:48;;2609:2;2598:9;2594:18;2581:32;2571:42;;2660:2;2649:9;2645:18;2632:32;2622:42;;2715:3;2704:9;2700:19;2687:33;2743:18;2735:6;2732:30;2729:2;;;2780:6;2772;2765:22;2729:2;2824:58;2874:7;2865:6;2854:9;2850:22;2824:58;:::i;:::-;2384:558;;;;-1:-1:-1;2384:558:144;;-1:-1:-1;2384:558:144;;2901:8;;2384:558;-1:-1:-1;;;2384:558:144:o;2947:306::-;;3058:2;3046:9;3037:7;3033:23;3029:32;3026:2;;;3079:6;3071;3064:22;3026:2;3110:23;;-1:-1:-1;;;;;;3162:32:144;;3152:43;;3142:2;;3214:6;3206;3199:22;3142:2;3242:5;3016:237;-1:-1:-1;;;3016:237:144:o;3258:360::-;3346:19;;;3258:360;-1:-1:-1;;;;;3377:31:144;;3374:2;;;3423:3;3418;3411:16;3374:2;3461:6;3458:1;3454:14;3513:8;3506:5;3499:4;3494:3;3490:14;3477:45;3545:18;;;;3565:4;3541:29;3579:15;;;-1:-1:-1;3541:29:144;;3336:282;-1:-1:-1;3336:282:144:o;3623:268::-;;3711:6;3706:3;3699:19;3763:6;3756:5;3749:4;3744:3;3740:14;3727:43;3815:3;3808:4;3799:6;3794:3;3790:16;3786:27;3779:40;3880:4;3873:2;3869:7;3864:2;3856:6;3852:15;3848:29;3843:3;3839:39;3835:50;3828:57;;3689:202;;;;;:::o;3896:979::-;-1:-1:-1;;;;;4351:15:144;;;4333:34;;4403:15;;4398:2;4383:18;;4376:43;4455:3;4450:2;4435:18;;4428:31;;;3896:979;;4482:74;;4536:19;;4528:6;4520;4482:74;:::i;:::-;4604:9;4596:6;4592:22;4587:2;4576:9;4572:18;4565:50;4638:61;4692:6;4684;4676;4638:61;:::i;:::-;4624:75;;4748:9;4740:6;4736:22;4730:3;4719:9;4715:19;4708:51;4776:49;4818:6;4810;4802;4776:49;:::i;:::-;4768:57;;;4862:6;4856:3;4845:9;4841:19;4834:35;4285:590;;;;;;;;;;;;:::o;4880:659::-;-1:-1:-1;;;;;5215:15:144;;;5197:34;;5267:15;;5262:2;5247:18;;5240:43;5314:2;5299:18;;5292:34;;;5357:2;5342:18;;5335:34;;;5406:3;5400;5385:19;;5378:32;;;4880:659;;5427:62;;5469:19;;5461:6;5453;5427:62;:::i;:::-;5419:70;;5526:6;5520:3;5509:9;5505:19;5498:35;5149:390;;;;;;;;;;:::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {
+      "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)": {
+        "details": "Handles the receipt of a multiple ERC1155 token types. This function is called at the end of a `safeBatchTransferFrom` after the balances have been updated. To accept the transfer(s), this must return `bytes4(keccak256(\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\"))` (i.e. 0xbc197c81, or its own function selector).",
+        "params": {
+          "data": "Additional data with no specified format",
+          "from": "The address which previously owned the token",
+          "ids": "An array containing ids of each token being transferred (order and length must match values array)",
+          "operator": "The address which initiated the batch transfer (i.e. msg.sender)",
+          "values": "An array containing amounts of each token being transferred (order and length must match ids array)"
+        },
+        "returns": {
+          "_0": "`bytes4(keccak256(\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\"))` if transfer is allowed"
+        }
+      },
+      "onERC1155Received(address,address,uint256,uint256,bytes)": {
+        "details": "Handles the receipt of a single ERC1155 token type. This function is called at the end of a `safeTransferFrom` after the balance has been updated. To accept the transfer, this must return `bytes4(keccak256(\"onERC1155Received(address,address,uint256,uint256,bytes)\"))` (i.e. 0xf23a6e61, or its own function selector).",
+        "params": {
+          "data": "Additional data with no specified format",
+          "from": "The address which previously owned the token",
+          "id": "The ID of the token being transferred",
+          "operator": "The address which initiated the transfer (i.e. msg.sender)",
+          "value": "The amount of tokens being transferred"
+        },
+        "returns": {
+          "_0": "`bytes4(keccak256(\"onERC1155Received(address,address,uint256,uint256,bytes)\"))` if transfer is allowed"
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "See {IERC165-supportsInterface}."
+      }
+    },
+    "version": 1
+  },
+  "offset": [
+    151,
+    1661
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x1FFC9A7 EQ PUSH2 0x46 JUMPI DUP1 PUSH4 0xBC197C81 EQ PUSH2 0x6E JUMPI DUP1 PUSH4 0xF23A6E61 EQ PUSH2 0x9A JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x59 PUSH2 0x54 CALLDATASIZE PUSH1 0x4 PUSH2 0x438 JUMP JUMPDEST PUSH2 0xAD JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x81 PUSH2 0x7C CALLDATASIZE PUSH1 0x4 PUSH2 0x30B JUMP JUMPDEST PUSH2 0xC7 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 ADD PUSH2 0x65 JUMP JUMPDEST PUSH2 0x81 PUSH2 0xA8 CALLDATASIZE PUSH1 0x4 PUSH2 0x3C2 JUMP JUMPDEST PUSH2 0x1A8 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT DUP2 AND PUSH4 0x1FFC9A7 PUSH1 0xE0 SHL EQ JUMPDEST SWAP2 SWAP1 POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH10 0x1000000000000000000 SWAP1 DIV PUSH1 0xFF AND ISZERO PUSH2 0x145 JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x2F PUSH1 0x24 DUP3 ADD MSTORE PUSH32 0x4552433131353552656365697665724D6F636B3A20726576657274696E67206F PUSH1 0x44 DUP3 ADD MSTORE PUSH15 0x6E2062617463682072656365697665 PUSH1 0x88 SHL PUSH1 0x64 DUP3 ADD MSTORE PUSH1 0x84 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH32 0xBCAD9224BA33B574E9C85298DE2F44B4C80015A21AA5DF474896444909863D8 DUP10 DUP10 DUP10 DUP10 DUP10 DUP10 DUP10 DUP10 GAS PUSH1 0x40 MLOAD PUSH2 0x184 SWAP10 SWAP9 SWAP8 SWAP7 SWAP6 SWAP5 SWAP4 SWAP3 SWAP2 SWAP1 PUSH2 0x4C5 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 LOG1 POP PUSH1 0x0 SLOAD PUSH6 0x10000000000 SWAP1 DIV PUSH1 0xE0 SHL SWAP9 SWAP8 POP POP POP POP POP POP POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH5 0x100000000 SWAP1 DIV PUSH1 0xFF AND ISZERO PUSH2 0x216 JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x29 PUSH1 0x24 DUP3 ADD MSTORE PUSH32 0x4552433131353552656365697665724D6F636B3A20726576657274696E67206F PUSH1 0x44 DUP3 ADD MSTORE PUSH9 0x6E2072656365697665 PUSH1 0xB8 SHL PUSH1 0x64 DUP3 ADD MSTORE PUSH1 0x84 ADD PUSH2 0x13C JUMP JUMPDEST PUSH32 0x20DFA9F79060C8C4D7FE892C97C71BCF6E3B63D1DCF66FEA7AEFC0211628CF29 DUP8 DUP8 DUP8 DUP8 DUP8 DUP8 GAS PUSH1 0x40 MLOAD PUSH2 0x251 SWAP8 SWAP7 SWAP6 SWAP5 SWAP4 SWAP3 SWAP2 SWAP1 PUSH2 0x531 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 LOG1 POP PUSH1 0x0 SLOAD PUSH1 0xE0 SHL SWAP7 SWAP6 POP POP POP POP POP POP JUMP JUMPDEST DUP1 CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 AND DUP2 EQ PUSH2 0xC2 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 DUP1 DUP4 PUSH1 0x1F DUP5 ADD SLT PUSH2 0x292 JUMPI DUP2 DUP3 REVERT JUMPDEST POP DUP2 CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP2 GT ISZERO PUSH2 0x2A9 JUMPI DUP2 DUP3 REVERT JUMPDEST PUSH1 0x20 DUP4 ADD SWAP2 POP DUP4 PUSH1 0x20 DUP3 PUSH1 0x5 SHL DUP6 ADD ADD GT ISZERO PUSH2 0x2C4 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP3 POP SWAP3 SWAP1 POP JUMP JUMPDEST PUSH1 0x0 DUP1 DUP4 PUSH1 0x1F DUP5 ADD SLT PUSH2 0x2DC JUMPI DUP2 DUP3 REVERT JUMPDEST POP DUP2 CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP2 GT ISZERO PUSH2 0x2F3 JUMPI DUP2 DUP3 REVERT JUMPDEST PUSH1 0x20 DUP4 ADD SWAP2 POP DUP4 PUSH1 0x20 DUP3 DUP6 ADD ADD GT ISZERO PUSH2 0x2C4 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0xA0 DUP10 DUP12 SUB SLT ISZERO PUSH2 0x326 JUMPI DUP4 DUP5 REVERT JUMPDEST PUSH2 0x32F DUP10 PUSH2 0x26A JUMP JUMPDEST SWAP8 POP PUSH2 0x33D PUSH1 0x20 DUP11 ADD PUSH2 0x26A JUMP JUMPDEST SWAP7 POP PUSH1 0x40 DUP10 ADD CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP1 DUP3 GT ISZERO PUSH2 0x359 JUMPI DUP6 DUP7 REVERT JUMPDEST PUSH2 0x365 DUP13 DUP4 DUP14 ADD PUSH2 0x281 JUMP JUMPDEST SWAP1 SWAP9 POP SWAP7 POP PUSH1 0x60 DUP12 ADD CALLDATALOAD SWAP2 POP DUP1 DUP3 GT ISZERO PUSH2 0x37D JUMPI DUP6 DUP7 REVERT JUMPDEST PUSH2 0x389 DUP13 DUP4 DUP14 ADD PUSH2 0x281 JUMP JUMPDEST SWAP1 SWAP7 POP SWAP5 POP PUSH1 0x80 DUP12 ADD CALLDATALOAD SWAP2 POP DUP1 DUP3 GT ISZERO PUSH2 0x3A1 JUMPI DUP4 DUP5 REVERT JUMPDEST POP PUSH2 0x3AE DUP12 DUP3 DUP13 ADD PUSH2 0x2CB JUMP JUMPDEST SWAP10 SWAP13 SWAP9 SWAP12 POP SWAP7 SWAP10 POP SWAP5 SWAP8 SWAP4 SWAP7 SWAP3 SWAP6 SWAP5 POP POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0xA0 DUP8 DUP10 SUB SLT ISZERO PUSH2 0x3DA JUMPI DUP2 DUP3 REVERT JUMPDEST PUSH2 0x3E3 DUP8 PUSH2 0x26A JUMP JUMPDEST SWAP6 POP PUSH2 0x3F1 PUSH1 0x20 DUP9 ADD PUSH2 0x26A JUMP JUMPDEST SWAP5 POP PUSH1 0x40 DUP8 ADD CALLDATALOAD SWAP4 POP PUSH1 0x60 DUP8 ADD CALLDATALOAD SWAP3 POP PUSH1 0x80 DUP8 ADD CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP2 GT ISZERO PUSH2 0x41A JUMPI DUP3 DUP4 REVERT JUMPDEST PUSH2 0x426 DUP10 DUP3 DUP11 ADD PUSH2 0x2CB JUMP JUMPDEST SWAP8 SWAP11 SWAP7 SWAP10 POP SWAP5 SWAP8 POP SWAP3 SWAP6 SWAP4 SWAP5 SWAP3 POP POP POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x449 JUMPI DUP1 DUP2 REVERT JUMPDEST DUP2 CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT DUP2 AND DUP2 EQ PUSH2 0x460 JUMPI DUP2 DUP3 REVERT JUMPDEST SWAP4 SWAP3 POP POP POP JUMP JUMPDEST DUP2 DUP4 MSTORE PUSH1 0x0 PUSH1 0x1 PUSH1 0x1 PUSH1 0xFB SHL SUB DUP4 GT ISZERO PUSH2 0x47F JUMPI DUP1 DUP2 REVERT JUMPDEST DUP3 PUSH1 0x5 SHL DUP1 DUP4 PUSH1 0x20 DUP8 ADD CALLDATACOPY SWAP4 SWAP1 SWAP4 ADD PUSH1 0x20 ADD SWAP3 DUP4 MSTORE POP SWAP1 SWAP2 SWAP1 POP JUMP JUMPDEST PUSH1 0x0 DUP3 DUP5 MSTORE DUP3 DUP3 PUSH1 0x20 DUP7 ADD CALLDATACOPY DUP1 PUSH1 0x20 DUP5 DUP7 ADD ADD MSTORE PUSH1 0x20 PUSH1 0x1F NOT PUSH1 0x1F DUP6 ADD AND DUP6 ADD ADD SWAP1 POP SWAP4 SWAP3 POP POP POP JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP11 DUP2 AND DUP3 MSTORE DUP10 AND PUSH1 0x20 DUP3 ADD MSTORE PUSH1 0xC0 PUSH1 0x40 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x0 SWAP1 PUSH2 0x4F2 SWAP1 DUP4 ADD DUP10 DUP12 PUSH2 0x467 JUMP JUMPDEST DUP3 DUP2 SUB PUSH1 0x60 DUP5 ADD MSTORE PUSH2 0x505 DUP2 DUP9 DUP11 PUSH2 0x467 JUMP JUMPDEST SWAP1 POP DUP3 DUP2 SUB PUSH1 0x80 DUP5 ADD MSTORE PUSH2 0x51A DUP2 DUP7 DUP9 PUSH2 0x49B JUMP JUMPDEST SWAP2 POP POP DUP3 PUSH1 0xA0 DUP4 ADD MSTORE SWAP11 SWAP10 POP POP POP POP POP POP POP POP POP POP JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP9 DUP2 AND DUP3 MSTORE DUP8 AND PUSH1 0x20 DUP3 ADD MSTORE PUSH1 0x40 DUP2 ADD DUP7 SWAP1 MSTORE PUSH1 0x60 DUP2 ADD DUP6 SWAP1 MSTORE PUSH1 0xC0 PUSH1 0x80 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x0 SWAP1 PUSH2 0x56C SWAP1 DUP4 ADD DUP6 DUP8 PUSH2 0x49B JUMP JUMPDEST SWAP1 POP DUP3 PUSH1 0xA0 DUP4 ADD MSTORE SWAP9 SWAP8 POP POP POP POP POP POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SELFBALANCE 0xEC SWAP14 0xEA PUSH25 0x943F7DAC4FB4514D7DBBC519FEEDC318CA41C6CB5C22034E09 NUMBER PUSH30 0x64736F6C6343000803003300000000000000000000000000000000000000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "MSTORE",
+      "path": "26"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "CALLVALUE",
+      "path": "26"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "ISZERO",
+      "path": "26"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "REVERT",
+      "path": "26"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "CALLDATASIZE",
+      "path": "26"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "LT",
+      "path": "26"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x41"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "CALLDATALOAD",
+      "path": "26"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "SHR",
+      "path": "26"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH4",
+      "path": "26",
+      "value": "0x1FFC9A7"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "EQ",
+      "path": "26"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x46"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH4",
+      "path": "26",
+      "value": "0xBC197C81"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "EQ",
+      "path": "26"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x6E"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH4",
+      "path": "26",
+      "value": "0xF23A6E61"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "EQ",
+      "path": "26"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x9A"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "68": {
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "69": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        151,
+        1661
+      ],
+      "op": "REVERT",
+      "path": "26"
+    },
+    "70": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMPDEST",
+      "path": "131"
+    },
+    "71": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH2",
+      "path": "131",
+      "value": "0x59"
+    },
+    "74": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH2",
+      "path": "131",
+      "value": "0x54"
+    },
+    "77": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "CALLDATASIZE",
+      "path": "131"
+    },
+    "78": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH1",
+      "path": "131",
+      "value": "0x4"
+    },
+    "80": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH2",
+      "path": "131",
+      "value": "0x438"
+    },
+    "83": {
+      "fn": "ERC165.supportsInterface",
+      "jump": "i",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMP",
+      "path": "131"
+    },
+    "84": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMPDEST",
+      "path": "131"
+    },
+    "85": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH2",
+      "path": "131",
+      "value": "0xAD"
+    },
+    "88": {
+      "fn": "ERC165.supportsInterface",
+      "jump": "i",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMP",
+      "path": "131"
+    },
+    "89": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMPDEST",
+      "path": "131"
+    },
+    "90": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH1",
+      "path": "131",
+      "value": "0x40"
+    },
+    "92": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "MLOAD",
+      "path": "131"
+    },
+    "93": {
+      "op": "SWAP1"
+    },
+    "94": {
+      "op": "ISZERO"
+    },
+    "95": {
+      "op": "ISZERO"
+    },
+    "96": {
+      "op": "DUP2"
+    },
+    "97": {
+      "op": "MSTORE"
+    },
+    "98": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "100": {
+      "op": "ADD"
+    },
+    "101": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMPDEST",
+      "path": "131"
+    },
+    "102": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "PUSH1",
+      "path": "131",
+      "value": "0x40"
+    },
+    "104": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "MLOAD",
+      "path": "131"
+    },
+    "105": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "DUP1",
+      "path": "131"
+    },
+    "106": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "SWAP2",
+      "path": "131"
+    },
+    "107": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "SUB",
+      "path": "131"
+    },
+    "108": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "SWAP1",
+      "path": "131"
+    },
+    "109": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "RETURN",
+      "path": "131"
+    },
+    "110": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "111": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x81"
+    },
+    "114": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x7C"
+    },
+    "117": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "CALLDATASIZE",
+      "path": "26"
+    },
+    "118": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x4"
+    },
+    "120": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x30B"
+    },
+    "123": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "jump": "i",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "124": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "125": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0xC7"
+    },
+    "128": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "jump": "i",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "129": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "130": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "132": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "133": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "135": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "137": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "139": {
+      "op": "SHL"
+    },
+    "140": {
+      "op": "SUB"
+    },
+    "141": {
+      "op": "NOT"
+    },
+    "142": {
+      "op": "SWAP1"
+    },
+    "143": {
+      "op": "SWAP2"
+    },
+    "144": {
+      "op": "AND"
+    },
+    "145": {
+      "op": "DUP2"
+    },
+    "146": {
+      "op": "MSTORE"
+    },
+    "147": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "149": {
+      "op": "ADD"
+    },
+    "150": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x65"
+    },
+    "153": {
+      "op": "JUMP"
+    },
+    "154": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "155": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x81"
+    },
+    "158": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0xA8"
+    },
+    "161": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "CALLDATASIZE",
+      "path": "26"
+    },
+    "162": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x4"
+    },
+    "164": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x3C2"
+    },
+    "167": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "jump": "i",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "168": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "169": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x1A8"
+    },
+    "172": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "jump": "i",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "173": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMPDEST",
+      "path": "131"
+    },
+    "174": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "176": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "178": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "180": {
+      "op": "SHL"
+    },
+    "181": {
+      "op": "SUB"
+    },
+    "182": {
+      "op": "NOT"
+    },
+    "183": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        871,
+        911
+      ],
+      "op": "DUP2",
+      "path": "131",
+      "statement": 0
+    },
+    "184": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        871,
+        911
+      ],
+      "op": "AND",
+      "path": "131"
+    },
+    "185": {
+      "op": "PUSH4",
+      "value": "0x1FFC9A7"
+    },
+    "190": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "192": {
+      "op": "SHL"
+    },
+    "193": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        871,
+        911
+      ],
+      "op": "EQ",
+      "path": "131"
+    },
+    "194": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMPDEST",
+      "path": "131"
+    },
+    "195": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "SWAP2",
+      "path": "131"
+    },
+    "196": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "SWAP1",
+      "path": "131"
+    },
+    "197": {
+      "fn": "ERC165.supportsInterface",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "POP",
+      "path": "131"
+    },
+    "198": {
+      "fn": "ERC165.supportsInterface",
+      "jump": "o",
+      "offset": [
+        763,
+        918
+      ],
+      "op": "JUMP",
+      "path": "131"
+    },
+    "199": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "200": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1457,
+        1463
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "202": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "DUP1",
+      "path": "26",
+      "statement": 1
+    },
+    "203": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "SLOAD",
+      "path": "26"
+    },
+    "204": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "PUSH10",
+      "path": "26",
+      "value": "0x1000000000000000000"
+    },
+    "215": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "216": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "DIV",
+      "path": "26"
+    },
+    "217": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0xFF"
+    },
+    "219": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1488,
+        1499
+      ],
+      "op": "AND",
+      "path": "26"
+    },
+    "220": {
+      "branch": 7,
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1487,
+        1499
+      ],
+      "op": "ISZERO",
+      "path": "26"
+    },
+    "221": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x145"
+    },
+    "224": {
+      "branch": 7,
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "225": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "227": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "228": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "232": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "234": {
+      "op": "SHL"
+    },
+    "235": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "DUP2",
+      "path": "26"
+    },
+    "236": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "MSTORE",
+      "path": "26"
+    },
+    "237": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "239": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x4"
+    },
+    "241": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "DUP3",
+      "path": "26"
+    },
+    "242": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "ADD",
+      "path": "26"
+    },
+    "243": {
+      "op": "MSTORE"
+    },
+    "244": {
+      "op": "PUSH1",
+      "value": "0x2F"
+    },
+    "246": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "248": {
+      "op": "DUP3"
+    },
+    "249": {
+      "op": "ADD"
+    },
+    "250": {
+      "op": "MSTORE"
+    },
+    "251": {
+      "op": "PUSH32",
+      "value": "0x4552433131353552656365697665724D6F636B3A20726576657274696E67206F"
+    },
+    "284": {
+      "op": "PUSH1",
+      "value": "0x44"
+    },
+    "286": {
+      "op": "DUP3"
+    },
+    "287": {
+      "op": "ADD"
+    },
+    "288": {
+      "op": "MSTORE"
+    },
+    "289": {
+      "op": "PUSH15",
+      "value": "0x6E2062617463682072656365697665"
+    },
+    "305": {
+      "op": "PUSH1",
+      "value": "0x88"
+    },
+    "307": {
+      "op": "SHL"
+    },
+    "308": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "310": {
+      "op": "DUP3"
+    },
+    "311": {
+      "op": "ADD"
+    },
+    "312": {
+      "op": "MSTORE"
+    },
+    "313": {
+      "op": "PUSH1",
+      "value": "0x84"
+    },
+    "315": {
+      "op": "ADD"
+    },
+    "316": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "317": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "319": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "320": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "321": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "SWAP2",
+      "path": "26"
+    },
+    "322": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "SUB",
+      "path": "26"
+    },
+    "323": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "324": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "REVERT",
+      "optimizer_revert": true,
+      "path": "26"
+    },
+    "325": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1479,
+        1551
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "326": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "PUSH32",
+      "path": "26",
+      "statement": 2,
+      "value": "0xBCAD9224BA33B574E9C85298DE2F44B4C80015A21AA5DF474896444909863D8"
+    },
+    "359": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1580,
+        1588
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "360": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1590,
+        1594
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "361": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1596,
+        1599
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "362": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1596,
+        1599
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "363": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1601,
+        1607
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "364": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1601,
+        1607
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "365": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1609,
+        1613
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "366": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1609,
+        1613
+      ],
+      "op": "DUP10",
+      "path": "26"
+    },
+    "367": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1615,
+        1624
+      ],
+      "op": "GAS",
+      "path": "26"
+    },
+    "368": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "370": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "371": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x184"
+    },
+    "374": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP10",
+      "path": "26"
+    },
+    "375": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP9",
+      "path": "26"
+    },
+    "376": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP8",
+      "path": "26"
+    },
+    "377": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP7",
+      "path": "26"
+    },
+    "378": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP6",
+      "path": "26"
+    },
+    "379": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP5",
+      "path": "26"
+    },
+    "380": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP4",
+      "path": "26"
+    },
+    "381": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP3",
+      "path": "26"
+    },
+    "382": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP2",
+      "path": "26"
+    },
+    "383": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "384": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x4C5"
+    },
+    "387": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "jump": "i",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "388": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "389": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "391": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "392": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "393": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP2",
+      "path": "26"
+    },
+    "394": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SUB",
+      "path": "26"
+    },
+    "395": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "396": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1566,
+        1625
+      ],
+      "op": "LOG1",
+      "path": "26"
+    },
+    "397": {
+      "op": "POP"
+    },
+    "398": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "statement": 3,
+      "value": "0x0"
+    },
+    "400": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "SLOAD",
+      "path": "26"
+    },
+    "401": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "PUSH6",
+      "path": "26",
+      "value": "0x10000000000"
+    },
+    "408": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "409": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "DIV",
+      "path": "26"
+    },
+    "410": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0xE0"
+    },
+    "412": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1642,
+        1652
+      ],
+      "op": "SHL",
+      "path": "26"
+    },
+    "413": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "SWAP9",
+      "path": "26"
+    },
+    "414": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "SWAP8",
+      "path": "26"
+    },
+    "415": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "416": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "417": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "418": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "419": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "420": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "421": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "422": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "423": {
+      "fn": "ERC1155ReceiverMock.onERC1155BatchReceived",
+      "jump": "o",
+      "offset": [
+        1225,
+        1659
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "424": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "425": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1030,
+        1036
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "427": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "DUP1",
+      "path": "26",
+      "statement": 4
+    },
+    "428": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "SLOAD",
+      "path": "26"
+    },
+    "429": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "PUSH5",
+      "path": "26",
+      "value": "0x100000000"
+    },
+    "435": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "436": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "DIV",
+      "path": "26"
+    },
+    "437": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0xFF"
+    },
+    "439": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1061,
+        1072
+      ],
+      "op": "AND",
+      "path": "26"
+    },
+    "440": {
+      "branch": 8,
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1060,
+        1072
+      ],
+      "op": "ISZERO",
+      "path": "26"
+    },
+    "441": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x216"
+    },
+    "444": {
+      "branch": 8,
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "445": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "447": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "448": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "452": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "454": {
+      "op": "SHL"
+    },
+    "455": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "DUP2",
+      "path": "26"
+    },
+    "456": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "MSTORE",
+      "path": "26"
+    },
+    "457": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "459": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x4"
+    },
+    "461": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "DUP3",
+      "path": "26"
+    },
+    "462": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "ADD",
+      "path": "26"
+    },
+    "463": {
+      "op": "MSTORE"
+    },
+    "464": {
+      "op": "PUSH1",
+      "value": "0x29"
+    },
+    "466": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "468": {
+      "op": "DUP3"
+    },
+    "469": {
+      "op": "ADD"
+    },
+    "470": {
+      "op": "MSTORE"
+    },
+    "471": {
+      "op": "PUSH32",
+      "value": "0x4552433131353552656365697665724D6F636B3A20726576657274696E67206F"
+    },
+    "504": {
+      "op": "PUSH1",
+      "value": "0x44"
+    },
+    "506": {
+      "op": "DUP3"
+    },
+    "507": {
+      "op": "ADD"
+    },
+    "508": {
+      "op": "MSTORE"
+    },
+    "509": {
+      "op": "PUSH9",
+      "value": "0x6E2072656365697665"
+    },
+    "519": {
+      "op": "PUSH1",
+      "value": "0xB8"
+    },
+    "521": {
+      "op": "SHL"
+    },
+    "522": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "524": {
+      "op": "DUP3"
+    },
+    "525": {
+      "op": "ADD"
+    },
+    "526": {
+      "op": "MSTORE"
+    },
+    "527": {
+      "op": "PUSH1",
+      "value": "0x84"
+    },
+    "529": {
+      "op": "ADD"
+    },
+    "530": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x13C"
+    },
+    "533": {
+      "op": "JUMP"
+    },
+    "534": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1052,
+        1118
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "535": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "PUSH32",
+      "path": "26",
+      "statement": 5,
+      "value": "0x20DFA9F79060C8C4D7FE892C97C71BCF6E3B63D1DCF66FEA7AEFC0211628CF29"
+    },
+    "568": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1142,
+        1150
+      ],
+      "op": "DUP8",
+      "path": "26"
+    },
+    "569": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1152,
+        1156
+      ],
+      "op": "DUP8",
+      "path": "26"
+    },
+    "570": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1158,
+        1160
+      ],
+      "op": "DUP8",
+      "path": "26"
+    },
+    "571": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1162,
+        1167
+      ],
+      "op": "DUP8",
+      "path": "26"
+    },
+    "572": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1169,
+        1173
+      ],
+      "op": "DUP8",
+      "path": "26"
+    },
+    "573": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1169,
+        1173
+      ],
+      "op": "DUP8",
+      "path": "26"
+    },
+    "574": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1175,
+        1184
+      ],
+      "op": "GAS",
+      "path": "26"
+    },
+    "575": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "577": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "578": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x251"
+    },
+    "581": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP8",
+      "path": "26"
+    },
+    "582": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP7",
+      "path": "26"
+    },
+    "583": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP6",
+      "path": "26"
+    },
+    "584": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP5",
+      "path": "26"
+    },
+    "585": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP4",
+      "path": "26"
+    },
+    "586": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP3",
+      "path": "26"
+    },
+    "587": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP2",
+      "path": "26"
+    },
+    "588": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "589": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x531"
+    },
+    "592": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "jump": "i",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "593": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "594": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x40"
+    },
+    "596": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "MLOAD",
+      "path": "26"
+    },
+    "597": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "598": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP2",
+      "path": "26"
+    },
+    "599": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SUB",
+      "path": "26"
+    },
+    "600": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "601": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1133,
+        1185
+      ],
+      "op": "LOG1",
+      "path": "26"
+    },
+    "602": {
+      "op": "POP"
+    },
+    "603": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1202,
+        1212
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "statement": 6,
+      "value": "0x0"
+    },
+    "605": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1202,
+        1212
+      ],
+      "op": "SLOAD",
+      "path": "26"
+    },
+    "606": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1202,
+        1212
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0xE0"
+    },
+    "608": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        1202,
+        1212
+      ],
+      "op": "SHL",
+      "path": "26"
+    },
+    "609": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "SWAP7",
+      "path": "26"
+    },
+    "610": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "SWAP6",
+      "path": "26"
+    },
+    "611": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "612": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "613": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "614": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "615": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "616": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "POP",
+      "path": "26"
+    },
+    "617": {
+      "fn": "ERC1155ReceiverMock.onERC1155Received",
+      "jump": "o",
+      "offset": [
+        827,
+        1219
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "618": {
+      "op": "JUMPDEST"
+    },
+    "619": {
+      "op": "DUP1"
+    },
+    "620": {
+      "op": "CALLDATALOAD"
+    },
+    "621": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "623": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "625": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "627": {
+      "op": "SHL"
+    },
+    "628": {
+      "op": "SUB"
+    },
+    "629": {
+      "op": "DUP2"
+    },
+    "630": {
+      "op": "AND"
+    },
+    "631": {
+      "op": "DUP2"
+    },
+    "632": {
+      "op": "EQ"
+    },
+    "633": {
+      "op": "PUSH2",
+      "value": "0xC2"
+    },
+    "636": {
+      "op": "JUMPI"
+    },
+    "637": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "639": {
+      "op": "DUP1"
+    },
+    "640": {
+      "op": "REVERT"
+    },
+    "641": {
+      "op": "JUMPDEST"
+    },
+    "642": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "644": {
+      "op": "DUP1"
+    },
+    "645": {
+      "op": "DUP4"
+    },
+    "646": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "648": {
+      "op": "DUP5"
+    },
+    "649": {
+      "op": "ADD"
+    },
+    "650": {
+      "op": "SLT"
+    },
+    "651": {
+      "op": "PUSH2",
+      "value": "0x292"
+    },
+    "654": {
+      "op": "JUMPI"
+    },
+    "655": {
+      "op": "DUP2"
+    },
+    "656": {
+      "op": "DUP3"
+    },
+    "657": {
+      "op": "REVERT"
+    },
+    "658": {
+      "op": "JUMPDEST"
+    },
+    "659": {
+      "op": "POP"
+    },
+    "660": {
+      "op": "DUP2"
+    },
+    "661": {
+      "op": "CALLDATALOAD"
+    },
+    "662": {
+      "op": "PUSH8",
+      "value": "0xFFFFFFFFFFFFFFFF"
+    },
+    "671": {
+      "op": "DUP2"
+    },
+    "672": {
+      "op": "GT"
+    },
+    "673": {
+      "op": "ISZERO"
+    },
+    "674": {
+      "op": "PUSH2",
+      "value": "0x2A9"
+    },
+    "677": {
+      "op": "JUMPI"
+    },
+    "678": {
+      "op": "DUP2"
+    },
+    "679": {
+      "op": "DUP3"
+    },
+    "680": {
+      "op": "REVERT"
+    },
+    "681": {
+      "op": "JUMPDEST"
+    },
+    "682": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "684": {
+      "op": "DUP4"
+    },
+    "685": {
+      "op": "ADD"
+    },
+    "686": {
+      "op": "SWAP2"
+    },
+    "687": {
+      "op": "POP"
+    },
+    "688": {
+      "op": "DUP4"
+    },
+    "689": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "691": {
+      "op": "DUP3"
+    },
+    "692": {
+      "op": "PUSH1",
+      "value": "0x5"
+    },
+    "694": {
+      "op": "SHL"
+    },
+    "695": {
+      "op": "DUP6"
+    },
+    "696": {
+      "op": "ADD"
+    },
+    "697": {
+      "op": "ADD"
+    },
+    "698": {
+      "op": "GT"
+    },
+    "699": {
+      "op": "ISZERO"
+    },
+    "700": {
+      "op": "PUSH2",
+      "value": "0x2C4"
+    },
+    "703": {
+      "op": "JUMPI"
+    },
+    "704": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "706": {
+      "op": "DUP1"
+    },
+    "707": {
+      "op": "REVERT"
+    },
+    "708": {
+      "op": "JUMPDEST"
+    },
+    "709": {
+      "op": "SWAP3"
+    },
+    "710": {
+      "op": "POP"
+    },
+    "711": {
+      "op": "SWAP3"
+    },
+    "712": {
+      "op": "SWAP1"
+    },
+    "713": {
+      "op": "POP"
+    },
+    "714": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "715": {
+      "op": "JUMPDEST"
+    },
+    "716": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "718": {
+      "op": "DUP1"
+    },
+    "719": {
+      "op": "DUP4"
+    },
+    "720": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "722": {
+      "op": "DUP5"
+    },
+    "723": {
+      "op": "ADD"
+    },
+    "724": {
+      "op": "SLT"
+    },
+    "725": {
+      "op": "PUSH2",
+      "value": "0x2DC"
+    },
+    "728": {
+      "op": "JUMPI"
+    },
+    "729": {
+      "op": "DUP2"
+    },
+    "730": {
+      "op": "DUP3"
+    },
+    "731": {
+      "op": "REVERT"
+    },
+    "732": {
+      "op": "JUMPDEST"
+    },
+    "733": {
+      "op": "POP"
+    },
+    "734": {
+      "op": "DUP2"
+    },
+    "735": {
+      "op": "CALLDATALOAD"
+    },
+    "736": {
+      "op": "PUSH8",
+      "value": "0xFFFFFFFFFFFFFFFF"
+    },
+    "745": {
+      "op": "DUP2"
+    },
+    "746": {
+      "op": "GT"
+    },
+    "747": {
+      "op": "ISZERO"
+    },
+    "748": {
+      "op": "PUSH2",
+      "value": "0x2F3"
+    },
+    "751": {
+      "op": "JUMPI"
+    },
+    "752": {
+      "op": "DUP2"
+    },
+    "753": {
+      "op": "DUP3"
+    },
+    "754": {
+      "op": "REVERT"
+    },
+    "755": {
+      "op": "JUMPDEST"
+    },
+    "756": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "758": {
+      "op": "DUP4"
+    },
+    "759": {
+      "op": "ADD"
+    },
+    "760": {
+      "op": "SWAP2"
+    },
+    "761": {
+      "op": "POP"
+    },
+    "762": {
+      "op": "DUP4"
+    },
+    "763": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "765": {
+      "op": "DUP3"
+    },
+    "766": {
+      "op": "DUP6"
+    },
+    "767": {
+      "op": "ADD"
+    },
+    "768": {
+      "op": "ADD"
+    },
+    "769": {
+      "op": "GT"
+    },
+    "770": {
+      "op": "ISZERO"
+    },
+    "771": {
+      "op": "PUSH2",
+      "value": "0x2C4"
+    },
+    "774": {
+      "op": "JUMPI"
+    },
+    "775": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "777": {
+      "op": "DUP1"
+    },
+    "778": {
+      "op": "REVERT"
+    },
+    "779": {
+      "op": "JUMPDEST"
+    },
+    "780": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "782": {
+      "op": "DUP1"
+    },
+    "783": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "785": {
+      "op": "DUP1"
+    },
+    "786": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "788": {
+      "op": "DUP1"
+    },
+    "789": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "791": {
+      "op": "DUP1"
+    },
+    "792": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "794": {
+      "op": "DUP10"
+    },
+    "795": {
+      "op": "DUP12"
+    },
+    "796": {
+      "op": "SUB"
+    },
+    "797": {
+      "op": "SLT"
+    },
+    "798": {
+      "op": "ISZERO"
+    },
+    "799": {
+      "op": "PUSH2",
+      "value": "0x326"
+    },
+    "802": {
+      "op": "JUMPI"
+    },
+    "803": {
+      "op": "DUP4"
+    },
+    "804": {
+      "op": "DUP5"
+    },
+    "805": {
+      "op": "REVERT"
+    },
+    "806": {
+      "op": "JUMPDEST"
+    },
+    "807": {
+      "op": "PUSH2",
+      "value": "0x32F"
+    },
+    "810": {
+      "op": "DUP10"
+    },
+    "811": {
+      "op": "PUSH2",
+      "value": "0x26A"
+    },
+    "814": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "815": {
+      "op": "JUMPDEST"
+    },
+    "816": {
+      "op": "SWAP8"
+    },
+    "817": {
+      "op": "POP"
+    },
+    "818": {
+      "op": "PUSH2",
+      "value": "0x33D"
+    },
+    "821": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "823": {
+      "op": "DUP11"
+    },
+    "824": {
+      "op": "ADD"
+    },
+    "825": {
+      "op": "PUSH2",
+      "value": "0x26A"
+    },
+    "828": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "829": {
+      "op": "JUMPDEST"
+    },
+    "830": {
+      "op": "SWAP7"
+    },
+    "831": {
+      "op": "POP"
+    },
+    "832": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "834": {
+      "op": "DUP10"
+    },
+    "835": {
+      "op": "ADD"
+    },
+    "836": {
+      "op": "CALLDATALOAD"
+    },
+    "837": {
+      "op": "PUSH8",
+      "value": "0xFFFFFFFFFFFFFFFF"
+    },
+    "846": {
+      "op": "DUP1"
+    },
+    "847": {
+      "op": "DUP3"
+    },
+    "848": {
+      "op": "GT"
+    },
+    "849": {
+      "op": "ISZERO"
+    },
+    "850": {
+      "op": "PUSH2",
+      "value": "0x359"
+    },
+    "853": {
+      "op": "JUMPI"
+    },
+    "854": {
+      "op": "DUP6"
+    },
+    "855": {
+      "op": "DUP7"
+    },
+    "856": {
+      "op": "REVERT"
+    },
+    "857": {
+      "op": "JUMPDEST"
+    },
+    "858": {
+      "op": "PUSH2",
+      "value": "0x365"
+    },
+    "861": {
+      "op": "DUP13"
+    },
+    "862": {
+      "op": "DUP4"
+    },
+    "863": {
+      "op": "DUP14"
+    },
+    "864": {
+      "op": "ADD"
+    },
+    "865": {
+      "op": "PUSH2",
+      "value": "0x281"
+    },
+    "868": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "869": {
+      "op": "JUMPDEST"
+    },
+    "870": {
+      "op": "SWAP1"
+    },
+    "871": {
+      "op": "SWAP9"
+    },
+    "872": {
+      "op": "POP"
+    },
+    "873": {
+      "op": "SWAP7"
+    },
+    "874": {
+      "op": "POP"
+    },
+    "875": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "877": {
+      "op": "DUP12"
+    },
+    "878": {
+      "op": "ADD"
+    },
+    "879": {
+      "op": "CALLDATALOAD"
+    },
+    "880": {
+      "op": "SWAP2"
+    },
+    "881": {
+      "op": "POP"
+    },
+    "882": {
+      "op": "DUP1"
+    },
+    "883": {
+      "op": "DUP3"
+    },
+    "884": {
+      "op": "GT"
+    },
+    "885": {
+      "op": "ISZERO"
+    },
+    "886": {
+      "op": "PUSH2",
+      "value": "0x37D"
+    },
+    "889": {
+      "op": "JUMPI"
+    },
+    "890": {
+      "op": "DUP6"
+    },
+    "891": {
+      "op": "DUP7"
+    },
+    "892": {
+      "op": "REVERT"
+    },
+    "893": {
+      "op": "JUMPDEST"
+    },
+    "894": {
+      "op": "PUSH2",
+      "value": "0x389"
+    },
+    "897": {
+      "op": "DUP13"
+    },
+    "898": {
+      "op": "DUP4"
+    },
+    "899": {
+      "op": "DUP14"
+    },
+    "900": {
+      "op": "ADD"
+    },
+    "901": {
+      "op": "PUSH2",
+      "value": "0x281"
+    },
+    "904": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "905": {
+      "op": "JUMPDEST"
+    },
+    "906": {
+      "op": "SWAP1"
+    },
+    "907": {
+      "op": "SWAP7"
+    },
+    "908": {
+      "op": "POP"
+    },
+    "909": {
+      "op": "SWAP5"
+    },
+    "910": {
+      "op": "POP"
+    },
+    "911": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "913": {
+      "op": "DUP12"
+    },
+    "914": {
+      "op": "ADD"
+    },
+    "915": {
+      "op": "CALLDATALOAD"
+    },
+    "916": {
+      "op": "SWAP2"
+    },
+    "917": {
+      "op": "POP"
+    },
+    "918": {
+      "op": "DUP1"
+    },
+    "919": {
+      "op": "DUP3"
+    },
+    "920": {
+      "op": "GT"
+    },
+    "921": {
+      "op": "ISZERO"
+    },
+    "922": {
+      "op": "PUSH2",
+      "value": "0x3A1"
+    },
+    "925": {
+      "op": "JUMPI"
+    },
+    "926": {
+      "op": "DUP4"
+    },
+    "927": {
+      "op": "DUP5"
+    },
+    "928": {
+      "op": "REVERT"
+    },
+    "929": {
+      "op": "JUMPDEST"
+    },
+    "930": {
+      "op": "POP"
+    },
+    "931": {
+      "op": "PUSH2",
+      "value": "0x3AE"
+    },
+    "934": {
+      "op": "DUP12"
+    },
+    "935": {
+      "op": "DUP3"
+    },
+    "936": {
+      "op": "DUP13"
+    },
+    "937": {
+      "op": "ADD"
+    },
+    "938": {
+      "op": "PUSH2",
+      "value": "0x2CB"
+    },
+    "941": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "942": {
+      "op": "JUMPDEST"
+    },
+    "943": {
+      "op": "SWAP10"
+    },
+    "944": {
+      "op": "SWAP13"
+    },
+    "945": {
+      "op": "SWAP9"
+    },
+    "946": {
+      "op": "SWAP12"
+    },
+    "947": {
+      "op": "POP"
+    },
+    "948": {
+      "op": "SWAP7"
+    },
+    "949": {
+      "op": "SWAP10"
+    },
+    "950": {
+      "op": "POP"
+    },
+    "951": {
+      "op": "SWAP5"
+    },
+    "952": {
+      "op": "SWAP8"
+    },
+    "953": {
+      "op": "SWAP4"
+    },
+    "954": {
+      "op": "SWAP7"
+    },
+    "955": {
+      "op": "SWAP3"
+    },
+    "956": {
+      "op": "SWAP6"
+    },
+    "957": {
+      "op": "SWAP5"
+    },
+    "958": {
+      "op": "POP"
+    },
+    "959": {
+      "op": "POP"
+    },
+    "960": {
+      "op": "POP"
+    },
+    "961": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "962": {
+      "op": "JUMPDEST"
+    },
+    "963": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "965": {
+      "op": "DUP1"
+    },
+    "966": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "968": {
+      "op": "DUP1"
+    },
+    "969": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "971": {
+      "op": "DUP1"
+    },
+    "972": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "974": {
+      "op": "DUP8"
+    },
+    "975": {
+      "op": "DUP10"
+    },
+    "976": {
+      "op": "SUB"
+    },
+    "977": {
+      "op": "SLT"
+    },
+    "978": {
+      "op": "ISZERO"
+    },
+    "979": {
+      "op": "PUSH2",
+      "value": "0x3DA"
+    },
+    "982": {
+      "op": "JUMPI"
+    },
+    "983": {
+      "op": "DUP2"
+    },
+    "984": {
+      "op": "DUP3"
+    },
+    "985": {
+      "op": "REVERT"
+    },
+    "986": {
+      "op": "JUMPDEST"
+    },
+    "987": {
+      "op": "PUSH2",
+      "value": "0x3E3"
+    },
+    "990": {
+      "op": "DUP8"
+    },
+    "991": {
+      "op": "PUSH2",
+      "value": "0x26A"
+    },
+    "994": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "995": {
+      "op": "JUMPDEST"
+    },
+    "996": {
+      "op": "SWAP6"
+    },
+    "997": {
+      "op": "POP"
+    },
+    "998": {
+      "op": "PUSH2",
+      "value": "0x3F1"
+    },
+    "1001": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1003": {
+      "op": "DUP9"
+    },
+    "1004": {
+      "op": "ADD"
+    },
+    "1005": {
+      "op": "PUSH2",
+      "value": "0x26A"
+    },
+    "1008": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "1009": {
+      "op": "JUMPDEST"
+    },
+    "1010": {
+      "op": "SWAP5"
+    },
+    "1011": {
+      "op": "POP"
+    },
+    "1012": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "1014": {
+      "op": "DUP8"
+    },
+    "1015": {
+      "op": "ADD"
+    },
+    "1016": {
+      "op": "CALLDATALOAD"
+    },
+    "1017": {
+      "op": "SWAP4"
+    },
+    "1018": {
+      "op": "POP"
+    },
+    "1019": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "1021": {
+      "op": "DUP8"
+    },
+    "1022": {
+      "op": "ADD"
+    },
+    "1023": {
+      "op": "CALLDATALOAD"
+    },
+    "1024": {
+      "op": "SWAP3"
+    },
+    "1025": {
+      "op": "POP"
+    },
+    "1026": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "1028": {
+      "op": "DUP8"
+    },
+    "1029": {
+      "op": "ADD"
+    },
+    "1030": {
+      "op": "CALLDATALOAD"
+    },
+    "1031": {
+      "op": "PUSH8",
+      "value": "0xFFFFFFFFFFFFFFFF"
+    },
+    "1040": {
+      "op": "DUP2"
+    },
+    "1041": {
+      "op": "GT"
+    },
+    "1042": {
+      "op": "ISZERO"
+    },
+    "1043": {
+      "op": "PUSH2",
+      "value": "0x41A"
+    },
+    "1046": {
+      "op": "JUMPI"
+    },
+    "1047": {
+      "op": "DUP3"
+    },
+    "1048": {
+      "op": "DUP4"
+    },
+    "1049": {
+      "op": "REVERT"
+    },
+    "1050": {
+      "op": "JUMPDEST"
+    },
+    "1051": {
+      "op": "PUSH2",
+      "value": "0x426"
+    },
+    "1054": {
+      "op": "DUP10"
+    },
+    "1055": {
+      "op": "DUP3"
+    },
+    "1056": {
+      "op": "DUP11"
+    },
+    "1057": {
+      "op": "ADD"
+    },
+    "1058": {
+      "op": "PUSH2",
+      "value": "0x2CB"
+    },
+    "1061": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "1062": {
+      "op": "JUMPDEST"
+    },
+    "1063": {
+      "op": "SWAP8"
+    },
+    "1064": {
+      "op": "SWAP11"
+    },
+    "1065": {
+      "op": "SWAP7"
+    },
+    "1066": {
+      "op": "SWAP10"
+    },
+    "1067": {
+      "op": "POP"
+    },
+    "1068": {
+      "op": "SWAP5"
+    },
+    "1069": {
+      "op": "SWAP8"
+    },
+    "1070": {
+      "op": "POP"
+    },
+    "1071": {
+      "op": "SWAP3"
+    },
+    "1072": {
+      "op": "SWAP6"
+    },
+    "1073": {
+      "op": "SWAP4"
+    },
+    "1074": {
+      "op": "SWAP5"
+    },
+    "1075": {
+      "op": "SWAP3"
+    },
+    "1076": {
+      "op": "POP"
+    },
+    "1077": {
+      "op": "POP"
+    },
+    "1078": {
+      "op": "POP"
+    },
+    "1079": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "1080": {
+      "op": "JUMPDEST"
+    },
+    "1081": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1083": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1085": {
+      "op": "DUP3"
+    },
+    "1086": {
+      "op": "DUP5"
+    },
+    "1087": {
+      "op": "SUB"
+    },
+    "1088": {
+      "op": "SLT"
+    },
+    "1089": {
+      "op": "ISZERO"
+    },
+    "1090": {
+      "op": "PUSH2",
+      "value": "0x449"
+    },
+    "1093": {
+      "op": "JUMPI"
+    },
+    "1094": {
+      "op": "DUP1"
+    },
+    "1095": {
+      "op": "DUP2"
+    },
+    "1096": {
+      "op": "REVERT"
+    },
+    "1097": {
+      "op": "JUMPDEST"
+    },
+    "1098": {
+      "op": "DUP2"
+    },
+    "1099": {
+      "op": "CALLDATALOAD"
+    },
+    "1100": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1102": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1104": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "1106": {
+      "op": "SHL"
+    },
+    "1107": {
+      "op": "SUB"
+    },
+    "1108": {
+      "op": "NOT"
+    },
+    "1109": {
+      "op": "DUP2"
+    },
+    "1110": {
+      "op": "AND"
+    },
+    "1111": {
+      "op": "DUP2"
+    },
+    "1112": {
+      "op": "EQ"
+    },
+    "1113": {
+      "op": "PUSH2",
+      "value": "0x460"
+    },
+    "1116": {
+      "op": "JUMPI"
+    },
+    "1117": {
+      "op": "DUP2"
+    },
+    "1118": {
+      "op": "DUP3"
+    },
+    "1119": {
+      "op": "REVERT"
+    },
+    "1120": {
+      "op": "JUMPDEST"
+    },
+    "1121": {
+      "op": "SWAP4"
+    },
+    "1122": {
+      "op": "SWAP3"
+    },
+    "1123": {
+      "op": "POP"
+    },
+    "1124": {
+      "op": "POP"
+    },
+    "1125": {
+      "op": "POP"
+    },
+    "1126": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "1127": {
+      "op": "JUMPDEST"
+    },
+    "1128": {
+      "op": "DUP2"
+    },
+    "1129": {
+      "op": "DUP4"
+    },
+    "1130": {
+      "op": "MSTORE"
+    },
+    "1131": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1133": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1135": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1137": {
+      "op": "PUSH1",
+      "value": "0xFB"
+    },
+    "1139": {
+      "op": "SHL"
+    },
+    "1140": {
+      "op": "SUB"
+    },
+    "1141": {
+      "op": "DUP4"
+    },
+    "1142": {
+      "op": "GT"
+    },
+    "1143": {
+      "op": "ISZERO"
+    },
+    "1144": {
+      "op": "PUSH2",
+      "value": "0x47F"
+    },
+    "1147": {
+      "op": "JUMPI"
+    },
+    "1148": {
+      "op": "DUP1"
+    },
+    "1149": {
+      "op": "DUP2"
+    },
+    "1150": {
+      "op": "REVERT"
+    },
+    "1151": {
+      "op": "JUMPDEST"
+    },
+    "1152": {
+      "op": "DUP3"
+    },
+    "1153": {
+      "op": "PUSH1",
+      "value": "0x5"
+    },
+    "1155": {
+      "op": "SHL"
+    },
+    "1156": {
+      "op": "DUP1"
+    },
+    "1157": {
+      "op": "DUP4"
+    },
+    "1158": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1160": {
+      "op": "DUP8"
+    },
+    "1161": {
+      "op": "ADD"
+    },
+    "1162": {
+      "op": "CALLDATACOPY"
+    },
+    "1163": {
+      "op": "SWAP4"
+    },
+    "1164": {
+      "op": "SWAP1"
+    },
+    "1165": {
+      "op": "SWAP4"
+    },
+    "1166": {
+      "op": "ADD"
+    },
+    "1167": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1169": {
+      "op": "ADD"
+    },
+    "1170": {
+      "op": "SWAP3"
+    },
+    "1171": {
+      "op": "DUP4"
+    },
+    "1172": {
+      "op": "MSTORE"
+    },
+    "1173": {
+      "op": "POP"
+    },
+    "1174": {
+      "op": "SWAP1"
+    },
+    "1175": {
+      "op": "SWAP2"
+    },
+    "1176": {
+      "op": "SWAP1"
+    },
+    "1177": {
+      "op": "POP"
+    },
+    "1178": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "1179": {
+      "op": "JUMPDEST"
+    },
+    "1180": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1182": {
+      "op": "DUP3"
+    },
+    "1183": {
+      "op": "DUP5"
+    },
+    "1184": {
+      "op": "MSTORE"
+    },
+    "1185": {
+      "op": "DUP3"
+    },
+    "1186": {
+      "op": "DUP3"
+    },
+    "1187": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1189": {
+      "op": "DUP7"
+    },
+    "1190": {
+      "op": "ADD"
+    },
+    "1191": {
+      "op": "CALLDATACOPY"
+    },
+    "1192": {
+      "op": "DUP1"
+    },
+    "1193": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1195": {
+      "op": "DUP5"
+    },
+    "1196": {
+      "op": "DUP7"
+    },
+    "1197": {
+      "op": "ADD"
+    },
+    "1198": {
+      "op": "ADD"
+    },
+    "1199": {
+      "op": "MSTORE"
+    },
+    "1200": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1202": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "1204": {
+      "op": "NOT"
+    },
+    "1205": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "1207": {
+      "op": "DUP6"
+    },
+    "1208": {
+      "op": "ADD"
+    },
+    "1209": {
+      "op": "AND"
+    },
+    "1210": {
+      "op": "DUP6"
+    },
+    "1211": {
+      "op": "ADD"
+    },
+    "1212": {
+      "op": "ADD"
+    },
+    "1213": {
+      "op": "SWAP1"
+    },
+    "1214": {
+      "op": "POP"
+    },
+    "1215": {
+      "op": "SWAP4"
+    },
+    "1216": {
+      "op": "SWAP3"
+    },
+    "1217": {
+      "op": "POP"
+    },
+    "1218": {
+      "op": "POP"
+    },
+    "1219": {
+      "op": "POP"
+    },
+    "1220": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "1221": {
+      "op": "JUMPDEST"
+    },
+    "1222": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1224": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1226": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1228": {
+      "op": "SHL"
+    },
+    "1229": {
+      "op": "SUB"
+    },
+    "1230": {
+      "op": "DUP11"
+    },
+    "1231": {
+      "op": "DUP2"
+    },
+    "1232": {
+      "op": "AND"
+    },
+    "1233": {
+      "op": "DUP3"
+    },
+    "1234": {
+      "op": "MSTORE"
+    },
+    "1235": {
+      "op": "DUP10"
+    },
+    "1236": {
+      "op": "AND"
+    },
+    "1237": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1239": {
+      "op": "DUP3"
+    },
+    "1240": {
+      "op": "ADD"
+    },
+    "1241": {
+      "op": "MSTORE"
+    },
+    "1242": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1244": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "1246": {
+      "op": "DUP3"
+    },
+    "1247": {
+      "op": "ADD"
+    },
+    "1248": {
+      "op": "DUP2"
+    },
+    "1249": {
+      "op": "SWAP1"
+    },
+    "1250": {
+      "op": "MSTORE"
+    },
+    "1251": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1253": {
+      "op": "SWAP1"
+    },
+    "1254": {
+      "op": "PUSH2",
+      "value": "0x4F2"
+    },
+    "1257": {
+      "op": "SWAP1"
+    },
+    "1258": {
+      "op": "DUP4"
+    },
+    "1259": {
+      "op": "ADD"
+    },
+    "1260": {
+      "op": "DUP10"
+    },
+    "1261": {
+      "op": "DUP12"
+    },
+    "1262": {
+      "op": "PUSH2",
+      "value": "0x467"
+    },
+    "1265": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "1266": {
+      "op": "JUMPDEST"
+    },
+    "1267": {
+      "op": "DUP3"
+    },
+    "1268": {
+      "op": "DUP2"
+    },
+    "1269": {
+      "op": "SUB"
+    },
+    "1270": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "1272": {
+      "op": "DUP5"
+    },
+    "1273": {
+      "op": "ADD"
+    },
+    "1274": {
+      "op": "MSTORE"
+    },
+    "1275": {
+      "op": "PUSH2",
+      "value": "0x505"
+    },
+    "1278": {
+      "op": "DUP2"
+    },
+    "1279": {
+      "op": "DUP9"
+    },
+    "1280": {
+      "op": "DUP11"
+    },
+    "1281": {
+      "op": "PUSH2",
+      "value": "0x467"
+    },
+    "1284": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "1285": {
+      "op": "JUMPDEST"
+    },
+    "1286": {
+      "op": "SWAP1"
+    },
+    "1287": {
+      "op": "POP"
+    },
+    "1288": {
+      "op": "DUP3"
+    },
+    "1289": {
+      "op": "DUP2"
+    },
+    "1290": {
+      "op": "SUB"
+    },
+    "1291": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "1293": {
+      "op": "DUP5"
+    },
+    "1294": {
+      "op": "ADD"
+    },
+    "1295": {
+      "op": "MSTORE"
+    },
+    "1296": {
+      "op": "PUSH2",
+      "value": "0x51A"
+    },
+    "1299": {
+      "op": "DUP2"
+    },
+    "1300": {
+      "op": "DUP7"
+    },
+    "1301": {
+      "op": "DUP9"
+    },
+    "1302": {
+      "op": "PUSH2",
+      "value": "0x49B"
+    },
+    "1305": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "1306": {
+      "op": "JUMPDEST"
+    },
+    "1307": {
+      "op": "SWAP2"
+    },
+    "1308": {
+      "op": "POP"
+    },
+    "1309": {
+      "op": "POP"
+    },
+    "1310": {
+      "op": "DUP3"
+    },
+    "1311": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1313": {
+      "op": "DUP4"
+    },
+    "1314": {
+      "op": "ADD"
+    },
+    "1315": {
+      "op": "MSTORE"
+    },
+    "1316": {
+      "op": "SWAP11"
+    },
+    "1317": {
+      "op": "SWAP10"
+    },
+    "1318": {
+      "op": "POP"
+    },
+    "1319": {
+      "op": "POP"
+    },
+    "1320": {
+      "op": "POP"
+    },
+    "1321": {
+      "op": "POP"
+    },
+    "1322": {
+      "op": "POP"
+    },
+    "1323": {
+      "op": "POP"
+    },
+    "1324": {
+      "op": "POP"
+    },
+    "1325": {
+      "op": "POP"
+    },
+    "1326": {
+      "op": "POP"
+    },
+    "1327": {
+      "op": "POP"
+    },
+    "1328": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "1329": {
+      "op": "JUMPDEST"
+    },
+    "1330": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1332": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1334": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1336": {
+      "op": "SHL"
+    },
+    "1337": {
+      "op": "SUB"
+    },
+    "1338": {
+      "op": "DUP9"
+    },
+    "1339": {
+      "op": "DUP2"
+    },
+    "1340": {
+      "op": "AND"
+    },
+    "1341": {
+      "op": "DUP3"
+    },
+    "1342": {
+      "op": "MSTORE"
+    },
+    "1343": {
+      "op": "DUP8"
+    },
+    "1344": {
+      "op": "AND"
+    },
+    "1345": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1347": {
+      "op": "DUP3"
+    },
+    "1348": {
+      "op": "ADD"
+    },
+    "1349": {
+      "op": "MSTORE"
+    },
+    "1350": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "1352": {
+      "op": "DUP2"
+    },
+    "1353": {
+      "op": "ADD"
+    },
+    "1354": {
+      "op": "DUP7"
+    },
+    "1355": {
+      "op": "SWAP1"
+    },
+    "1356": {
+      "op": "MSTORE"
+    },
+    "1357": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "1359": {
+      "op": "DUP2"
+    },
+    "1360": {
+      "op": "ADD"
+    },
+    "1361": {
+      "op": "DUP6"
+    },
+    "1362": {
+      "op": "SWAP1"
+    },
+    "1363": {
+      "op": "MSTORE"
+    },
+    "1364": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1366": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "1368": {
+      "op": "DUP3"
+    },
+    "1369": {
+      "op": "ADD"
+    },
+    "1370": {
+      "op": "DUP2"
+    },
+    "1371": {
+      "op": "SWAP1"
+    },
+    "1372": {
+      "op": "MSTORE"
+    },
+    "1373": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1375": {
+      "op": "SWAP1"
+    },
+    "1376": {
+      "op": "PUSH2",
+      "value": "0x56C"
+    },
+    "1379": {
+      "op": "SWAP1"
+    },
+    "1380": {
+      "op": "DUP4"
+    },
+    "1381": {
+      "op": "ADD"
+    },
+    "1382": {
+      "op": "DUP6"
+    },
+    "1383": {
+      "op": "DUP8"
+    },
+    "1384": {
+      "op": "PUSH2",
+      "value": "0x49B"
+    },
+    "1387": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "1388": {
+      "op": "JUMPDEST"
+    },
+    "1389": {
+      "op": "SWAP1"
+    },
+    "1390": {
+      "op": "POP"
+    },
+    "1391": {
+      "op": "DUP3"
+    },
+    "1392": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1394": {
+      "op": "DUP4"
+    },
+    "1395": {
+      "op": "ADD"
+    },
+    "1396": {
+      "op": "MSTORE"
+    },
+    "1397": {
+      "op": "SWAP9"
+    },
+    "1398": {
+      "op": "SWAP8"
+    },
+    "1399": {
+      "op": "POP"
+    },
+    "1400": {
+      "op": "POP"
+    },
+    "1401": {
+      "op": "POP"
+    },
+    "1402": {
+      "op": "POP"
+    },
+    "1403": {
+      "op": "POP"
+    },
+    "1404": {
+      "op": "POP"
+    },
+    "1405": {
+      "op": "POP"
+    },
+    "1406": {
+      "op": "POP"
+    },
+    "1407": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "4c9924280c3d5472e2ed1475b23b5fa805d23f29",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport \"../token/ERC1155/IERC1155Receiver.sol\";\nimport \"../utils/introspection/ERC165.sol\";\n\ncontract ERC1155ReceiverMock is IERC1155Receiver, ERC165 {\n    bytes4 private _recRetval;\n    bool private _recReverts;\n    bytes4 private _batRetval;\n    bool private _batReverts;\n\n    event Received(address operator, address from, uint256 id, uint256 value, bytes data, uint256 gas);\n    event BatchReceived(address operator, address from, uint256[] ids, uint256[] values, bytes data, uint256 gas);\n\n    constructor (\n        bytes4 recRetval,\n        bool recReverts,\n        bytes4 batRetval,\n        bool batReverts\n    )\n    {\n        _recRetval = recRetval;\n        _recReverts = recReverts;\n        _batRetval = batRetval;\n        _batReverts = batReverts;\n    }\n\n    function onERC1155Received(\n        address operator,\n        address from,\n        uint256 id,\n        uint256 value,\n        bytes calldata data\n    )\n        external\n        override\n        returns(bytes4)\n    {\n        require(!_recReverts, \"ERC1155ReceiverMock: reverting on receive\");\n        emit Received(operator, from, id, value, data, gasleft());\n        return _recRetval;\n    }\n\n    function onERC1155BatchReceived(\n        address operator,\n        address from,\n        uint256[] calldata ids,\n        uint256[] calldata values,\n        bytes calldata data\n    )\n        external\n        override\n        returns(bytes4)\n    {\n        require(!_batReverts, \"ERC1155ReceiverMock: reverting on batch receive\");\n        emit BatchReceived(operator, from, ids, values, data, gasleft());\n        return _batRetval;\n    }\n}\n",
+  "sourceMap": "151:1510:26:-:0;;;557:264;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;692:10;:22;;790:24;;;;;-1:-1:-1;;;;692:22:26;758;;;;;790:24;-1:-1:-1;;;;724:24:26;;;;;-1:-1:-1;;724:24:26;;;692:22;;;;724:24;;;;;;;;790;;;;;;;;;;;151:1510;;14:164:144;90:13;;139;;132:21;122:32;;112:2;;168:1;165;158:12;112:2;71:107;;;:::o;183:177::-;261:13;;-1:-1:-1;;;;;;303:32:144;;293:43;;283:2;;350:1;347;340:12;365:458;;;;;531:3;519:9;510:7;506:23;502:33;499:2;;;553:6;545;538:22;499:2;581:39;610:9;581:39;:::i;:::-;571:49;;639:46;681:2;670:9;666:18;639:46;:::i;:::-;629:56;;704:48;748:2;737:9;733:18;704:48;:::i;:::-;694:58;;771:46;813:2;802:9;798:18;771:46;:::i;:::-;761:56;;489:334;;;;;;;:::o;:::-;151:1510:26;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts/contracts/mocks/ERC1155ReceiverMock.sol",
+  "type": "contract"
+}

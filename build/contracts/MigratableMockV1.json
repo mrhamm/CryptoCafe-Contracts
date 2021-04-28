@@ -1,0 +1,2521 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "x",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "67": "contracts/openzeppelin-contracts/contracts/mocks/SingleInheritanceInitializableMocks.sol",
+    "77": "contracts/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts/contracts/mocks/SingleInheritanceInitializableMocks.sol",
+    "exportedSymbols": {
+      "Address": [
+        14906
+      ],
+      "Initializable": [
+        7875
+      ],
+      "MigratableMockV1": [
+        6934
+      ],
+      "MigratableMockV2": [
+        6967
+      ],
+      "MigratableMockV3": [
+        6998
+      ]
+    },
+    "id": 6999,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6915,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:67"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "file": "../proxy/utils/Initializable.sol",
+        "id": 6916,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 6999,
+        "sourceUnit": 7876,
+        "src": "58:42:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 6918,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7875,
+              "src": "253:13:67"
+            },
+            "id": 6919,
+            "nodeType": "InheritanceSpecifier",
+            "src": "253:13:67"
+          }
+        ],
+        "contractDependencies": [
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 6917,
+          "nodeType": "StructuredDocumentation",
+          "src": "102:121:67",
+          "text": " @title MigratableMockV1\n @dev This contract is a mock to test initializable functionality through migrations"
+        },
+        "fullyImplemented": true,
+        "id": 6934,
+        "linearizedBaseContracts": [
+          6934,
+          7875
+        ],
+        "name": "MigratableMockV1",
+        "nameLocation": "233:16:67",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "0c55699c",
+            "id": 6921,
+            "mutability": "mutable",
+            "name": "x",
+            "nameLocation": "286:1:67",
+            "nodeType": "VariableDeclaration",
+            "scope": 6934,
+            "src": "271:16:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 6920,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "271:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6932,
+              "nodeType": "Block",
+              "src": "354:20:67",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 6930,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6928,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6921,
+                      "src": "360:1:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 6929,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6923,
+                      "src": "364:5:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "360:9:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6931,
+                  "nodeType": "ExpressionStatement",
+                  "src": "360:9:67"
+                }
+              ]
+            },
+            "functionSelector": "fe4b84df",
+            "id": 6933,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 6926,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 6925,
+                  "name": "initializer",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 7874,
+                  "src": "342:11:67"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "342:11:67"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "301:10:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6924,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6923,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "320:5:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6933,
+                  "src": "312:13:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6922,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "312:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "311:15:67"
+            },
+            "returnParameters": {
+              "id": 6927,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:0:67"
+            },
+            "scope": 6934,
+            "src": "292:82:67",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6999,
+        "src": "224:152:67"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 6936,
+              "name": "MigratableMockV1",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 6934,
+              "src": "519:16:67"
+            },
+            "id": 6937,
+            "nodeType": "InheritanceSpecifier",
+            "src": "519:16:67"
+          }
+        ],
+        "contractDependencies": [
+          6934,
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 6935,
+          "nodeType": "StructuredDocumentation",
+          "src": "378:111:67",
+          "text": " @title MigratableMockV2\n @dev This contract is a mock to test migratable functionality with params"
+        },
+        "fullyImplemented": true,
+        "id": 6967,
+        "linearizedBaseContracts": [
+          6967,
+          6934,
+          7875
+        ],
+        "name": "MigratableMockV2",
+        "nameLocation": "499:16:67",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 6939,
+            "mutability": "mutable",
+            "name": "_migratedV2",
+            "nameLocation": "554:11:67",
+            "nodeType": "VariableDeclaration",
+            "scope": 6967,
+            "src": "540:25:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 6938,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "540:4:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "functionSelector": "a56dfe4a",
+            "id": 6941,
+            "mutability": "mutable",
+            "name": "y",
+            "nameLocation": "584:1:67",
+            "nodeType": "VariableDeclaration",
+            "scope": 6967,
+            "src": "569:16:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 6940,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "569:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6965,
+              "nodeType": "Block",
+              "src": "659:93:67",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 6950,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "673:12:67",
+                        "subExpression": {
+                          "id": 6949,
+                          "name": "_migratedV2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6939,
+                          "src": "674:11:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 6948,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "665:7:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 6951,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "665:21:67",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6952,
+                  "nodeType": "ExpressionStatement",
+                  "src": "665:21:67"
+                },
+                {
+                  "expression": {
+                    "id": 6955,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6953,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6921,
+                      "src": "692:1:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 6954,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6943,
+                      "src": "696:5:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "692:9:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6956,
+                  "nodeType": "ExpressionStatement",
+                  "src": "692:9:67"
+                },
+                {
+                  "expression": {
+                    "id": 6959,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6957,
+                      "name": "y",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6941,
+                      "src": "707:1:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 6958,
+                      "name": "anotherValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6945,
+                      "src": "711:12:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "707:16:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6960,
+                  "nodeType": "ExpressionStatement",
+                  "src": "707:16:67"
+                },
+                {
+                  "expression": {
+                    "id": 6963,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6961,
+                      "name": "_migratedV2",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6939,
+                      "src": "729:11:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 6962,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "743:4:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "729:18:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 6964,
+                  "nodeType": "ExpressionStatement",
+                  "src": "729:18:67"
+                }
+              ]
+            },
+            "functionSelector": "3e54bacb",
+            "id": 6966,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "migrate",
+            "nameLocation": "599:7:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6946,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6943,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "615:5:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6966,
+                  "src": "607:13:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6942,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "607:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6945,
+                  "mutability": "mutable",
+                  "name": "anotherValue",
+                  "nameLocation": "630:12:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6966,
+                  "src": "622:20:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6944,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "622:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "606:37:67"
+            },
+            "returnParameters": {
+              "id": 6947,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "659:0:67"
+            },
+            "scope": 6967,
+            "src": "590:162:67",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6999,
+        "src": "490:264:67"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 6969,
+              "name": "MigratableMockV2",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 6967,
+              "src": "900:16:67"
+            },
+            "id": 6970,
+            "nodeType": "InheritanceSpecifier",
+            "src": "900:16:67"
+          }
+        ],
+        "contractDependencies": [
+          6934,
+          6967,
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 6968,
+          "nodeType": "StructuredDocumentation",
+          "src": "756:114:67",
+          "text": " @title MigratableMockV3\n @dev This contract is a mock to test migratable functionality without params"
+        },
+        "fullyImplemented": true,
+        "id": 6998,
+        "linearizedBaseContracts": [
+          6998,
+          6967,
+          6934,
+          7875
+        ],
+        "name": "MigratableMockV3",
+        "nameLocation": "880:16:67",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 6972,
+            "mutability": "mutable",
+            "name": "_migratedV3",
+            "nameLocation": "935:11:67",
+            "nodeType": "VariableDeclaration",
+            "scope": 6998,
+            "src": "921:25:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 6971,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "921:4:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 6996,
+              "nodeType": "Block",
+              "src": "985:103:67",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 6977,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "999:12:67",
+                        "subExpression": {
+                          "id": 6976,
+                          "name": "_migratedV3",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6972,
+                          "src": "1000:11:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 6975,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "991:7:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 6978,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "991:21:67",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6979,
+                  "nodeType": "ExpressionStatement",
+                  "src": "991:21:67"
+                },
+                {
+                  "assignments": [
+                    6981
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6981,
+                      "mutability": "mutable",
+                      "name": "oldX",
+                      "nameLocation": "1026:4:67",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6996,
+                      "src": "1018:12:67",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 6980,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1018:7:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6983,
+                  "initialValue": {
+                    "id": 6982,
+                    "name": "x",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6921,
+                    "src": "1033:1:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1018:16:67"
+                },
+                {
+                  "expression": {
+                    "id": 6986,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6984,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6921,
+                      "src": "1040:1:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 6985,
+                      "name": "y",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6941,
+                      "src": "1044:1:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1040:5:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6987,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1040:5:67"
+                },
+                {
+                  "expression": {
+                    "id": 6990,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6988,
+                      "name": "y",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6941,
+                      "src": "1051:1:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 6989,
+                      "name": "oldX",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6981,
+                      "src": "1055:4:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1051:8:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6991,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1051:8:67"
+                },
+                {
+                  "expression": {
+                    "id": 6994,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6992,
+                      "name": "_migratedV3",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6972,
+                      "src": "1065:11:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 6993,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1079:4:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1065:18:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 6995,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1065:18:67"
+                }
+              ]
+            },
+            "functionSelector": "8fd3ab80",
+            "id": 6997,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "migrate",
+            "nameLocation": "960:7:67",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6973,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "967:2:67"
+            },
+            "returnParameters": {
+              "id": 6974,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "985:0:67"
+            },
+            "scope": 6998,
+            "src": "951:137:67",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6999,
+        "src": "871:219:67"
+      }
+    ],
+    "src": "33:1058:67"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610176806100206000396000f3fe6080604052600436106100295760003560e01c80630c55699c1461002e578063fe4b84df14610056575b600080fd5b34801561003a57600080fd5b5061004460015481565b60405190815260200160405180910390f35b610069610064366004610128565b61006b565b005b600054610100900460ff1680610084575060005460ff16155b6100eb5760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b606482015260840160405180910390fd5b600054610100900460ff1615801561010d576000805461ffff19166101011790555b60018290558015610124576000805461ff00191690555b5050565b600060208284031215610139578081fd5b503591905056fea2646970667358221220d85da378c7c45482436e60ef11d73a928704706ad3e196ae96677128263d0c8464736f6c63430008030033",
+  "bytecodeSha1": "4a3020ab288a7add5cfa24f12cba7b57d48d6eee",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.3+commit.8d00100c"
+  },
+  "contractName": "MigratableMockV1",
+  "coverageMap": {
+    "branches": {
+      "67": {},
+      "77": {
+        "MigratableMockV1.initialize": {
+          "1": [
+            1495,
+            1508,
+            true
+          ],
+          "2": [
+            1513,
+            1525,
+            true
+          ]
+        }
+      }
+    },
+    "statements": {
+      "67": {
+        "MigratableMockV1.initialize": {
+          "0": [
+            360,
+            369
+          ]
+        }
+      },
+      "77": {}
+    }
+  },
+  "dependencies": [
+    "Initializable"
+  ],
+  "deployedBytecode": "6080604052600436106100295760003560e01c80630c55699c1461002e578063fe4b84df14610056575b600080fd5b34801561003a57600080fd5b5061004460015481565b60405190815260200160405180910390f35b610069610064366004610128565b61006b565b005b600054610100900460ff1680610084575060005460ff16155b6100eb5760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b606482015260840160405180910390fd5b600054610100900460ff1615801561010d576000805461ffff19166101011790555b60018290558015610124576000805461ff00191690555b5050565b600060208284031215610139578081fd5b503591905056fea2646970667358221220d85da378c7c45482436e60ef11d73a928704706ad3e196ae96677128263d0c8464736f6c63430008030033",
+  "deployedSourceMap": "224:152:67:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;271:16;;;;;;;;;;;;;;;;;;;770:25:144;;;758:2;743:18;271:16:67;;;;;;;292:82;;;;;;:::i;:::-;;:::i;:::-;;;1495:13:77;;;;;;;;:30;;-1:-1:-1;1513:12:77;;;;1512:13;1495:30;1487:89;;;;-1:-1:-1;;;1487:89:77;;411:2:144;1487:89:77;;;393:21:144;450:2;430:18;;;423:30;489:34;469:18;;;462:62;-1:-1:-1;;;540:18:144;;;533:44;594:19;;1487:89:77;;;;;;;;1587:19;1610:13;;;;;;1609:14;1633:98;;;;1667:13;:20;;-1:-1:-1;;1701:19:77;;;;;1633:98;360:1:67::1;:9:::0;;;1753:66:77;;;;1803:5;1787:21;;-1:-1:-1;;1787:21:77;;;1753:66;292:82:67;;:::o;14:190:144:-;;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;-1:-1:-1;175:23:144;;84:120;-1:-1:-1;84:120:144:o",
+  "language": "Solidity",
+  "natspec": {
+    "details": "This contract is a mock to test initializable functionality through migrations",
+    "kind": "dev",
+    "methods": {},
+    "title": "MigratableMockV1",
+    "version": 1
+  },
+  "offset": [
+    224,
+    376
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x29 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xC55699C EQ PUSH2 0x2E JUMPI DUP1 PUSH4 0xFE4B84DF EQ PUSH2 0x56 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x3A JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x44 PUSH1 0x1 SLOAD DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x69 PUSH2 0x64 CALLDATASIZE PUSH1 0x4 PUSH2 0x128 JUMP JUMPDEST PUSH2 0x6B JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP1 PUSH2 0x84 JUMPI POP PUSH1 0x0 SLOAD PUSH1 0xFF AND ISZERO JUMPDEST PUSH2 0xEB JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x2E PUSH1 0x24 DUP3 ADD MSTORE PUSH32 0x496E697469616C697A61626C653A20636F6E747261637420697320616C726561 PUSH1 0x44 DUP3 ADD MSTORE PUSH14 0x191E481A5B9A5D1A585B1A5E9959 PUSH1 0x92 SHL PUSH1 0x64 DUP3 ADD MSTORE PUSH1 0x84 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND ISZERO DUP1 ISZERO PUSH2 0x10D JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFFFF NOT AND PUSH2 0x101 OR SWAP1 SSTORE JUMPDEST PUSH1 0x1 DUP3 SWAP1 SSTORE DUP1 ISZERO PUSH2 0x124 JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND SWAP1 SSTORE JUMPDEST POP POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x139 JUMPI DUP1 DUP2 REVERT JUMPDEST POP CALLDATALOAD SWAP2 SWAP1 POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD8 0x5D LOG3 PUSH25 0xC7C45482436E60EF11D73A928704706AD3E196AE9667712826 RETURNDATASIZE 0xC DUP5 PUSH5 0x736F6C6343 STOP ADDMOD SUB STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "MSTORE",
+      "path": "67"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x4"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "CALLDATASIZE",
+      "path": "67"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "LT",
+      "path": "67"
+    },
+    "9": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x29"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "JUMPI",
+      "path": "67"
+    },
+    "13": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x0"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "CALLDATALOAD",
+      "path": "67"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0xE0"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "SHR",
+      "path": "67"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "DUP1",
+      "path": "67"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH4",
+      "path": "67",
+      "value": "0xC55699C"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "EQ",
+      "path": "67"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x2E"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "JUMPI",
+      "path": "67"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "DUP1",
+      "path": "67"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH4",
+      "path": "67",
+      "value": "0xFE4B84DF"
+    },
+    "36": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "EQ",
+      "path": "67"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x56"
+    },
+    "40": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "JUMPI",
+      "path": "67"
+    },
+    "41": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x0"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "DUP1",
+      "path": "67"
+    },
+    "45": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        224,
+        376
+      ],
+      "op": "REVERT",
+      "path": "67"
+    },
+    "46": {
+      "offset": [
+        271,
+        287
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "47": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "CALLVALUE",
+      "path": "67"
+    },
+    "48": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "DUP1",
+      "path": "67"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "ISZERO",
+      "path": "67"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x3A"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "JUMPI",
+      "path": "67"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x0"
+    },
+    "56": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "DUP1",
+      "path": "67"
+    },
+    "57": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "REVERT",
+      "path": "67"
+    },
+    "58": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "59": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "POP",
+      "path": "67"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x44"
+    },
+    "63": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x1"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "SLOAD",
+      "path": "67"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "DUP2",
+      "path": "67"
+    },
+    "67": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "JUMP",
+      "path": "67"
+    },
+    "68": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "69": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x40"
+    },
+    "71": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "MLOAD",
+      "path": "67"
+    },
+    "72": {
+      "op": "SWAP1"
+    },
+    "73": {
+      "op": "DUP2"
+    },
+    "74": {
+      "op": "MSTORE"
+    },
+    "75": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "77": {
+      "op": "ADD"
+    },
+    "78": {
+      "offset": [
+        271,
+        287
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x40"
+    },
+    "80": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "MLOAD",
+      "path": "67"
+    },
+    "81": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "DUP1",
+      "path": "67"
+    },
+    "82": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "SWAP2",
+      "path": "67"
+    },
+    "83": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "SUB",
+      "path": "67"
+    },
+    "84": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "SWAP1",
+      "path": "67"
+    },
+    "85": {
+      "fn": null,
+      "offset": [
+        271,
+        287
+      ],
+      "op": "RETURN",
+      "path": "67"
+    },
+    "86": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "87": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x69"
+    },
+    "90": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x64"
+    },
+    "93": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "CALLDATASIZE",
+      "path": "67"
+    },
+    "94": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "value": "0x4"
+    },
+    "96": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x128"
+    },
+    "99": {
+      "fn": "MigratableMockV1.initialize",
+      "jump": "i",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMP",
+      "path": "67"
+    },
+    "100": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "101": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "PUSH2",
+      "path": "67",
+      "value": "0x6B"
+    },
+    "104": {
+      "fn": "MigratableMockV1.initialize",
+      "jump": "i",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMP",
+      "path": "67"
+    },
+    "105": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "106": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "STOP",
+      "path": "67"
+    },
+    "107": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "67"
+    },
+    "108": {
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "110": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "111": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x100"
+    },
+    "114": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "115": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "DIV",
+      "path": "77"
+    },
+    "116": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "118": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "119": {
+      "branch": 1,
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "120": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x84"
+    },
+    "123": {
+      "branch": 1,
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "124": {
+      "op": "POP"
+    },
+    "125": {
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "127": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "128": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "130": {
+      "branch": 2,
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "131": {
+      "offset": [
+        1512,
+        1525
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "132": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "133": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0xEB"
+    },
+    "136": {
+      "branch": 2,
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "137": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x40"
+    },
+    "139": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MLOAD",
+      "path": "77"
+    },
+    "140": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "144": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "146": {
+      "op": "SHL"
+    },
+    "147": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "DUP2",
+      "path": "77"
+    },
+    "148": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MSTORE",
+      "path": "77"
+    },
+    "149": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "151": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x4"
+    },
+    "153": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "DUP3",
+      "path": "77"
+    },
+    "154": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "ADD",
+      "path": "77"
+    },
+    "155": {
+      "op": "MSTORE"
+    },
+    "156": {
+      "op": "PUSH1",
+      "value": "0x2E"
+    },
+    "158": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "160": {
+      "op": "DUP3"
+    },
+    "161": {
+      "op": "ADD"
+    },
+    "162": {
+      "op": "MSTORE"
+    },
+    "163": {
+      "op": "PUSH32",
+      "value": "0x496E697469616C697A61626C653A20636F6E747261637420697320616C726561"
+    },
+    "196": {
+      "op": "PUSH1",
+      "value": "0x44"
+    },
+    "198": {
+      "op": "DUP3"
+    },
+    "199": {
+      "op": "ADD"
+    },
+    "200": {
+      "op": "MSTORE"
+    },
+    "201": {
+      "op": "PUSH14",
+      "value": "0x191E481A5B9A5D1A585B1A5E9959"
+    },
+    "216": {
+      "op": "PUSH1",
+      "value": "0x92"
+    },
+    "218": {
+      "op": "SHL"
+    },
+    "219": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "221": {
+      "op": "DUP3"
+    },
+    "222": {
+      "op": "ADD"
+    },
+    "223": {
+      "op": "MSTORE"
+    },
+    "224": {
+      "op": "PUSH1",
+      "value": "0x84"
+    },
+    "226": {
+      "op": "ADD"
+    },
+    "227": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x40"
+    },
+    "229": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MLOAD",
+      "path": "77"
+    },
+    "230": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "231": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SWAP2",
+      "path": "77"
+    },
+    "232": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SUB",
+      "path": "77"
+    },
+    "233": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "234": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "REVERT",
+      "optimizer_revert": true,
+      "path": "77"
+    },
+    "235": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "236": {
+      "offset": [
+        1587,
+        1606
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "238": {
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "239": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x100"
+    },
+    "242": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "243": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "DIV",
+      "path": "77"
+    },
+    "244": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "246": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "247": {
+      "offset": [
+        1609,
+        1623
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "248": {
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "249": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "250": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x10D"
+    },
+    "253": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "254": {
+      "offset": [
+        1667,
+        1680
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "256": {
+      "offset": [
+        1667,
+        1687
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "257": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1667,
+        1687
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "258": {
+      "op": "PUSH2",
+      "value": "0xFFFF"
+    },
+    "261": {
+      "op": "NOT"
+    },
+    "262": {
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "263": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x101"
+    },
+    "266": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "OR",
+      "path": "77"
+    },
+    "267": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "268": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "SSTORE",
+      "path": "77"
+    },
+    "269": {
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "270": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        360,
+        361
+      ],
+      "op": "PUSH1",
+      "path": "67",
+      "statement": 0,
+      "value": "0x1"
+    },
+    "272": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        360,
+        369
+      ],
+      "op": "DUP3",
+      "path": "67"
+    },
+    "273": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        360,
+        369
+      ],
+      "op": "SWAP1",
+      "path": "67"
+    },
+    "274": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        360,
+        369
+      ],
+      "op": "SSTORE",
+      "path": "67"
+    },
+    "275": {
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "276": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "277": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x124"
+    },
+    "280": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "281": {
+      "offset": [
+        1803,
+        1808
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "283": {
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "284": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "285": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "288": {
+      "op": "NOT"
+    },
+    "289": {
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "290": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "291": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SSTORE",
+      "path": "77"
+    },
+    "292": {
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "293": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "POP",
+      "path": "67"
+    },
+    "294": {
+      "fn": "MigratableMockV1.initialize",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "POP",
+      "path": "67"
+    },
+    "295": {
+      "fn": "MigratableMockV1.initialize",
+      "jump": "o",
+      "offset": [
+        292,
+        374
+      ],
+      "op": "JUMP",
+      "path": "67"
+    },
+    "296": {
+      "op": "JUMPDEST"
+    },
+    "297": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "299": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "301": {
+      "op": "DUP3"
+    },
+    "302": {
+      "op": "DUP5"
+    },
+    "303": {
+      "op": "SUB"
+    },
+    "304": {
+      "op": "SLT"
+    },
+    "305": {
+      "op": "ISZERO"
+    },
+    "306": {
+      "op": "PUSH2",
+      "value": "0x139"
+    },
+    "309": {
+      "op": "JUMPI"
+    },
+    "310": {
+      "op": "DUP1"
+    },
+    "311": {
+      "op": "DUP2"
+    },
+    "312": {
+      "op": "REVERT"
+    },
+    "313": {
+      "op": "JUMPDEST"
+    },
+    "314": {
+      "op": "POP"
+    },
+    "315": {
+      "op": "CALLDATALOAD"
+    },
+    "316": {
+      "op": "SWAP2"
+    },
+    "317": {
+      "op": "SWAP1"
+    },
+    "318": {
+      "op": "POP"
+    },
+    "319": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "acdba022ff865ab9ff0b90093805c5d3bcdd3f91",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport \"../proxy/utils/Initializable.sol\";\n\n/**\n * @title MigratableMockV1\n * @dev This contract is a mock to test initializable functionality through migrations\n */\ncontract MigratableMockV1 is Initializable {\n  uint256 public x;\n\n  function initialize(uint256 value) public payable initializer {\n    x = value;\n  }\n}\n\n/**\n * @title MigratableMockV2\n * @dev This contract is a mock to test migratable functionality with params\n */\ncontract MigratableMockV2 is MigratableMockV1 {\n  bool internal _migratedV2;\n  uint256 public y;\n\n  function migrate(uint256 value, uint256 anotherValue) public payable {\n    require(!_migratedV2);\n    x = value;\n    y = anotherValue;\n    _migratedV2 = true;\n  }\n}\n\n/**\n * @title MigratableMockV3\n * @dev This contract is a mock to test migratable functionality without params\n */\ncontract MigratableMockV3 is MigratableMockV2 {\n  bool internal _migratedV3;\n\n  function migrate() public payable {\n    require(!_migratedV3);\n    uint256 oldX = x;\n    x = y;\n    y = oldX;\n    _migratedV3 = true;\n  }\n}\n",
+  "sourceMap": "224:152:67:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts/contracts/mocks/SingleInheritanceInitializableMocks.sol",
+  "type": "contract"
+}

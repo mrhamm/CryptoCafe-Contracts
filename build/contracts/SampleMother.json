@@ -1,0 +1,4134 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isHuman",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mother",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "56": "contracts/openzeppelin-contracts/contracts/mocks/MultipleInheritanceInitializableMocks.sol",
+    "77": "contracts/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts/contracts/mocks/MultipleInheritanceInitializableMocks.sol",
+    "exportedSymbols": {
+      "Address": [
+        14906
+      ],
+      "Initializable": [
+        7875
+      ],
+      "SampleChild": [
+        5575
+      ],
+      "SampleFather": [
+        5534
+      ],
+      "SampleGramps": [
+        5506
+      ],
+      "SampleHuman": [
+        5456
+      ],
+      "SampleMother": [
+        5481
+      ]
+    },
+    "id": 5576,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5439,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:56"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "file": "../proxy/utils/Initializable.sol",
+        "id": 5440,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 5576,
+        "sourceUnit": 7876,
+        "src": "58:42:56",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5442,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7875,
+              "src": "496:13:56"
+            },
+            "id": 5443,
+            "nodeType": "InheritanceSpecifier",
+            "src": "496:13:56"
+          }
+        ],
+        "contractDependencies": [
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 5441,
+          "nodeType": "StructuredDocumentation",
+          "src": "411:60:56",
+          "text": " Sample base intializable contract that is a human"
+        },
+        "fullyImplemented": true,
+        "id": 5456,
+        "linearizedBaseContracts": [
+          5456,
+          7875
+        ],
+        "name": "SampleHuman",
+        "nameLocation": "481:11:56",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "4a6c9db6",
+            "id": 5445,
+            "mutability": "mutable",
+            "name": "isHuman",
+            "nameLocation": "526:7:56",
+            "nodeType": "VariableDeclaration",
+            "scope": 5456,
+            "src": "514:19:56",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 5444,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "514:4:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5454,
+              "nodeType": "Block",
+              "src": "579:25:56",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 5452,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 5450,
+                      "name": "isHuman",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5445,
+                      "src": "585:7:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 5451,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "595:4:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "585:14:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 5453,
+                  "nodeType": "ExpressionStatement",
+                  "src": "585:14:56"
+                }
+              ]
+            },
+            "functionSelector": "8129fc1c",
+            "id": 5455,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 5448,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 5447,
+                  "name": "initializer",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 7874,
+                  "src": "567:11:56"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "567:11:56"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "547:10:56",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5446,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "557:2:56"
+            },
+            "returnParameters": {
+              "id": 5449,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "579:0:56"
+            },
+            "scope": 5456,
+            "src": "538:66:56",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5576,
+        "src": "472:134:56"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5458,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7875,
+              "src": "706:13:56"
+            },
+            "id": 5459,
+            "nodeType": "InheritanceSpecifier",
+            "src": "706:13:56"
+          },
+          {
+            "baseName": {
+              "id": 5460,
+              "name": "SampleHuman",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5456,
+              "src": "721:11:56"
+            },
+            "id": 5461,
+            "nodeType": "InheritanceSpecifier",
+            "src": "721:11:56"
+          }
+        ],
+        "contractDependencies": [
+          5456,
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 5457,
+          "nodeType": "StructuredDocumentation",
+          "src": "608:72:56",
+          "text": " Sample base intializable contract that defines a field mother"
+        },
+        "fullyImplemented": true,
+        "id": 5481,
+        "linearizedBaseContracts": [
+          5481,
+          5456,
+          7875
+        ],
+        "name": "SampleMother",
+        "nameLocation": "690:12:56",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "ed7dfee3",
+            "id": 5463,
+            "mutability": "mutable",
+            "name": "mother",
+            "nameLocation": "752:6:56",
+            "nodeType": "VariableDeclaration",
+            "scope": 5481,
+            "src": "737:21:56",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5462,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "737:7:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5479,
+              "nodeType": "Block",
+              "src": "825:55:56",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 5470,
+                        "name": "SampleHuman",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5456,
+                        "src": "831:11:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SampleHuman_$5456_$",
+                          "typeString": "type(contract SampleHuman)"
+                        }
+                      },
+                      "id": 5472,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5455,
+                      "src": "831:22:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 5473,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "831:24:56",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5474,
+                  "nodeType": "ExpressionStatement",
+                  "src": "831:24:56"
+                },
+                {
+                  "expression": {
+                    "id": 5477,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 5475,
+                      "name": "mother",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5463,
+                      "src": "861:6:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 5476,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5465,
+                      "src": "870:5:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "861:14:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 5478,
+                  "nodeType": "ExpressionStatement",
+                  "src": "861:14:56"
+                }
+              ]
+            },
+            "functionSelector": "fe4b84df",
+            "id": 5480,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 5468,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 5467,
+                  "name": "initializer",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 7874,
+                  "src": "805:11:56"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "805:11:56"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "772:10:56",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5466,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5465,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "791:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5480,
+                  "src": "783:13:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5464,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "783:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "782:15:56"
+            },
+            "returnParameters": {
+              "id": 5469,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "825:0:56"
+            },
+            "scope": 5481,
+            "src": "763:117:56",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5576,
+        "src": "681:201:56"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5483,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7875,
+              "src": "982:13:56"
+            },
+            "id": 5484,
+            "nodeType": "InheritanceSpecifier",
+            "src": "982:13:56"
+          },
+          {
+            "baseName": {
+              "id": 5485,
+              "name": "SampleHuman",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5456,
+              "src": "997:11:56"
+            },
+            "id": 5486,
+            "nodeType": "InheritanceSpecifier",
+            "src": "997:11:56"
+          }
+        ],
+        "contractDependencies": [
+          5456,
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 5482,
+          "nodeType": "StructuredDocumentation",
+          "src": "884:72:56",
+          "text": " Sample base intializable contract that defines a field gramps"
+        },
+        "fullyImplemented": true,
+        "id": 5506,
+        "linearizedBaseContracts": [
+          5506,
+          5456,
+          7875
+        ],
+        "name": "SampleGramps",
+        "nameLocation": "966:12:56",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "fa39851f",
+            "id": 5488,
+            "mutability": "mutable",
+            "name": "gramps",
+            "nameLocation": "1027:6:56",
+            "nodeType": "VariableDeclaration",
+            "scope": 5506,
+            "src": "1013:20:56",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 5487,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1013:6:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5504,
+              "nodeType": "Block",
+              "src": "1106:55:56",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 5495,
+                        "name": "SampleHuman",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5456,
+                        "src": "1112:11:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SampleHuman_$5456_$",
+                          "typeString": "type(contract SampleHuman)"
+                        }
+                      },
+                      "id": 5497,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5455,
+                      "src": "1112:22:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 5498,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1112:24:56",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5499,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1112:24:56"
+                },
+                {
+                  "expression": {
+                    "id": 5502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 5500,
+                      "name": "gramps",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5488,
+                      "src": "1142:6:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 5501,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5490,
+                      "src": "1151:5:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1142:14:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 5503,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1142:14:56"
+                }
+              ]
+            },
+            "functionSelector": "f62d1888",
+            "id": 5505,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 5493,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 5492,
+                  "name": "initializer",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 7874,
+                  "src": "1086:11:56"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1086:11:56"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "1047:10:56",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5491,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5490,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1072:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5505,
+                  "src": "1058:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5489,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1058:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1057:21:56"
+            },
+            "returnParameters": {
+              "id": 5494,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1106:0:56"
+            },
+            "scope": 5506,
+            "src": "1038:123:56",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5576,
+        "src": "957:206:56"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5508,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7875,
+              "src": "1287:13:56"
+            },
+            "id": 5509,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1287:13:56"
+          },
+          {
+            "baseName": {
+              "id": 5510,
+              "name": "SampleGramps",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5506,
+              "src": "1302:12:56"
+            },
+            "id": 5511,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1302:12:56"
+          }
+        ],
+        "contractDependencies": [
+          5456,
+          5506,
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 5507,
+          "nodeType": "StructuredDocumentation",
+          "src": "1165:96:56",
+          "text": " Sample base intializable contract that defines a field father and extends from gramps"
+        },
+        "fullyImplemented": true,
+        "id": 5534,
+        "linearizedBaseContracts": [
+          5534,
+          5506,
+          5456,
+          7875
+        ],
+        "name": "SampleFather",
+        "nameLocation": "1271:12:56",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "1c8aca3b",
+            "id": 5513,
+            "mutability": "mutable",
+            "name": "father",
+            "nameLocation": "1334:6:56",
+            "nodeType": "VariableDeclaration",
+            "scope": 5534,
+            "src": "1319:21:56",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5512,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1319:7:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5532,
+              "nodeType": "Block",
+              "src": "1424:65:56",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 5525,
+                        "name": "_gramps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5515,
+                        "src": "1454:7:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 5522,
+                        "name": "SampleGramps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5506,
+                        "src": "1430:12:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SampleGramps_$5506_$",
+                          "typeString": "type(contract SampleGramps)"
+                        }
+                      },
+                      "id": 5524,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5505,
+                      "src": "1430:23:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 5526,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1430:32:56",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5527,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1430:32:56"
+                },
+                {
+                  "expression": {
+                    "id": 5530,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 5528,
+                      "name": "father",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5513,
+                      "src": "1468:6:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 5529,
+                      "name": "_father",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5517,
+                      "src": "1477:7:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1468:16:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 5531,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1468:16:56"
+                }
+              ]
+            },
+            "functionSelector": "8beaf7d7",
+            "id": 5533,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 5520,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 5519,
+                  "name": "initializer",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 7874,
+                  "src": "1412:11:56"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1412:11:56"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "1354:10:56",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5515,
+                  "mutability": "mutable",
+                  "name": "_gramps",
+                  "nameLocation": "1379:7:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5533,
+                  "src": "1365:21:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5514,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1365:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5517,
+                  "mutability": "mutable",
+                  "name": "_father",
+                  "nameLocation": "1396:7:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5533,
+                  "src": "1388:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5516,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1388:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1364:40:56"
+            },
+            "returnParameters": {
+              "id": 5521,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1424:0:56"
+            },
+            "scope": 5534,
+            "src": "1345:144:56",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5576,
+        "src": "1262:229:56"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5536,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7875,
+              "src": "1571:13:56"
+            },
+            "id": 5537,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1571:13:56"
+          },
+          {
+            "baseName": {
+              "id": 5538,
+              "name": "SampleMother",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5481,
+              "src": "1586:12:56"
+            },
+            "id": 5539,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1586:12:56"
+          },
+          {
+            "baseName": {
+              "id": 5540,
+              "name": "SampleFather",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5534,
+              "src": "1600:12:56"
+            },
+            "id": 5541,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1600:12:56"
+          }
+        ],
+        "contractDependencies": [
+          5456,
+          5481,
+          5506,
+          5534,
+          7875
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 5535,
+          "nodeType": "StructuredDocumentation",
+          "src": "1493:53:56",
+          "text": " Child extends from mother, father (gramps)"
+        },
+        "fullyImplemented": true,
+        "id": 5575,
+        "linearizedBaseContracts": [
+          5575,
+          5534,
+          5506,
+          5481,
+          5456,
+          7875
+        ],
+        "name": "SampleChild",
+        "nameLocation": "1556:11:56",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "237b5e96",
+            "id": 5543,
+            "mutability": "mutable",
+            "name": "child",
+            "nameLocation": "1632:5:56",
+            "nodeType": "VariableDeclaration",
+            "scope": 5575,
+            "src": "1617:20:56",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5542,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1617:7:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5573,
+              "nodeType": "Block",
+              "src": "1754:110:56",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 5559,
+                        "name": "_mother",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5545,
+                        "src": "1784:7:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 5556,
+                        "name": "SampleMother",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5481,
+                        "src": "1760:12:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SampleMother_$5481_$",
+                          "typeString": "type(contract SampleMother)"
+                        }
+                      },
+                      "id": 5558,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5480,
+                      "src": "1760:23:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 5560,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1760:32:56",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5561,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1760:32:56"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 5565,
+                        "name": "_gramps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5547,
+                        "src": "1822:7:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "id": 5566,
+                        "name": "_father",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5549,
+                        "src": "1831:7:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 5562,
+                        "name": "SampleFather",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5534,
+                        "src": "1798:12:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SampleFather_$5534_$",
+                          "typeString": "type(contract SampleFather)"
+                        }
+                      },
+                      "id": 5564,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5533,
+                      "src": "1798:23:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 5567,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1798:41:56",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5568,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1798:41:56"
+                },
+                {
+                  "expression": {
+                    "id": 5571,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 5569,
+                      "name": "child",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5543,
+                      "src": "1845:5:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 5570,
+                      "name": "_child",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5551,
+                      "src": "1853:6:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1845:14:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 5572,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1845:14:56"
+                }
+              ]
+            },
+            "functionSelector": "6f2edbd2",
+            "id": 5574,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 5554,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 5553,
+                  "name": "initializer",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 7874,
+                  "src": "1742:11:56"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1742:11:56"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "1651:10:56",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5552,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5545,
+                  "mutability": "mutable",
+                  "name": "_mother",
+                  "nameLocation": "1670:7:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5574,
+                  "src": "1662:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5544,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1662:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5547,
+                  "mutability": "mutable",
+                  "name": "_gramps",
+                  "nameLocation": "1693:7:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5574,
+                  "src": "1679:21:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5546,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1679:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5549,
+                  "mutability": "mutable",
+                  "name": "_father",
+                  "nameLocation": "1710:7:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5574,
+                  "src": "1702:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5548,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1702:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5551,
+                  "mutability": "mutable",
+                  "name": "_child",
+                  "nameLocation": "1727:6:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5574,
+                  "src": "1719:14:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5550,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1719:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1661:73:56"
+            },
+            "returnParameters": {
+              "id": 5555,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1754:0:56"
+            },
+            "scope": 5575,
+            "src": "1642:222:56",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5576,
+        "src": "1547:319:56"
+      }
+    ],
+    "src": "33:1834:56"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610249806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80634a6c9db6146100515780638129fc1c14610079578063ed7dfee314610083578063fe4b84df1461009a575b600080fd5b6000546100649062010000900460ff1681565b60405190151581526020015b60405180910390f35b6100816100ad565b005b61008c60015481565b604051908152602001610070565b6100816100a83660046101ad565b610133565b600054610100900460ff16806100c6575060005460ff16155b6100eb5760405162461bcd60e51b81526004016100e2906101c5565b60405180910390fd5b600054610100900460ff1615801561010d576000805461ffff19166101011790555b6000805462ff00001916620100001790558015610130576000805461ff00191690555b50565b600054610100900460ff168061014c575060005460ff16155b6101685760405162461bcd60e51b81526004016100e2906101c5565b600054610100900460ff1615801561018a576000805461ffff19166101011790555b6101926100ad565b600182905580156101a9576000805461ff00191690555b5050565b6000602082840312156101be578081fd5b5035919050565b6020808252602e908201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160408201526d191e481a5b9a5d1a585b1a5e995960921b60608201526080019056fea2646970667358221220817f20b0c4e2b1b3431c4ec56dd1732bf5ccaa56b7e671daafa8257d07add9b564736f6c63430008030033",
+  "bytecodeSha1": "ef90da498578abac6042e068fc23d3481d103d68",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.3+commit.8d00100c"
+  },
+  "contractName": "SampleMother",
+  "coverageMap": {
+    "branches": {
+      "56": {},
+      "77": {
+        "SampleMother.initialize": {
+          "3": [
+            1495,
+            1508,
+            true
+          ],
+          "4": [
+            1513,
+            1525,
+            true
+          ]
+        }
+      }
+    },
+    "statements": {
+      "56": {
+        "SampleHuman.initialize": {
+          "0": [
+            585,
+            599
+          ]
+        },
+        "SampleMother.initialize": {
+          "1": [
+            831,
+            855
+          ],
+          "2": [
+            861,
+            875
+          ]
+        }
+      },
+      "77": {}
+    }
+  },
+  "dependencies": [
+    "Initializable",
+    "SampleHuman"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b506004361061004c5760003560e01c80634a6c9db6146100515780638129fc1c14610079578063ed7dfee314610083578063fe4b84df1461009a575b600080fd5b6000546100649062010000900460ff1681565b60405190151581526020015b60405180910390f35b6100816100ad565b005b61008c60015481565b604051908152602001610070565b6100816100a83660046101ad565b610133565b600054610100900460ff16806100c6575060005460ff16155b6100eb5760405162461bcd60e51b81526004016100e2906101c5565b60405180910390fd5b600054610100900460ff1615801561010d576000805461ffff19166101011790555b6000805462ff00001916620100001790558015610130576000805461ff00191690555b50565b600054610100900460ff168061014c575060005460ff16155b6101685760405162461bcd60e51b81526004016100e2906101c5565b600054610100900460ff1615801561018a576000805461ffff19166101011790555b6101926100ad565b600182905580156101a9576000805461ff00191690555b5050565b6000602082840312156101be578081fd5b5035919050565b6020808252602e908201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160408201526d191e481a5b9a5d1a585b1a5e995960921b60608201526080019056fea2646970667358221220817f20b0c4e2b1b3431c4ec56dd1732bf5ccaa56b7e671daafa8257d07add9b564736f6c63430008030033",
+  "deployedSourceMap": "681:201:56:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;514:19;;;;;;;;;;;;;;;374:14:144;;367:22;349:41;;337:2;322:18;514:19:56;;;;;;;;538:66;;;:::i;:::-;;737:21;;;;;;;;;962:25:144;;;950:2;935:18;737:21:56;917:76:144;763:117:56;;;;;;:::i;:::-;;:::i;538:66::-;1495:13:77;;;;;;;;:30;;-1:-1:-1;1513:12:77;;;;1512:13;1495:30;1487:89;;;;-1:-1:-1;;;1487:89:77;;;;;;;:::i;:::-;;;;;;;;;1587:19;1610:13;;;;;;1609:14;1633:98;;;;1667:13;:20;;-1:-1:-1;;1701:19:77;;;;;1633:98;585:7:56::1;:14:::0;;-1:-1:-1;;585:14:56::1;::::0;::::1;::::0;;1753:66:77;;;;1803:5;1787:21;;-1:-1:-1;;1787:21:77;;;1753:66;538::56;:::o;763:117::-;1495:13:77;;;;;;;;:30;;-1:-1:-1;1513:12:77;;;;1512:13;1495:30;1487:89;;;;-1:-1:-1;;;1487:89:77;;;;;;;:::i;:::-;1587:19;1610:13;;;;;;1609:14;1633:98;;;;1667:13;:20;;-1:-1:-1;;1701:19:77;;;;;1633:98;831:24:56::1;:22;:24::i;:::-;861:6;:14:::0;;;1753:66:77;;;;1803:5;1787:21;;-1:-1:-1;;1787:21:77;;;1753:66;763:117:56;;:::o;14:190:144:-;;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;-1:-1:-1;175:23:144;;84:120;-1:-1:-1;84:120:144:o;401:410::-;603:2;585:21;;;642:2;622:18;;;615:30;681:34;676:2;661:18;;654:62;-1:-1:-1;;;747:2:144;732:18;;725:44;801:3;786:19;;575:236::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "notice": "Sample base intializable contract that defines a field mother",
+    "version": 1
+  },
+  "offset": [
+    681,
+    882
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x4C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x4A6C9DB6 EQ PUSH2 0x51 JUMPI DUP1 PUSH4 0x8129FC1C EQ PUSH2 0x79 JUMPI DUP1 PUSH4 0xED7DFEE3 EQ PUSH2 0x83 JUMPI DUP1 PUSH4 0xFE4B84DF EQ PUSH2 0x9A JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x64 SWAP1 PUSH3 0x10000 SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x81 PUSH2 0xAD JUMP JUMPDEST STOP JUMPDEST PUSH2 0x8C PUSH1 0x1 SLOAD DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD PUSH2 0x70 JUMP JUMPDEST PUSH2 0x81 PUSH2 0xA8 CALLDATASIZE PUSH1 0x4 PUSH2 0x1AD JUMP JUMPDEST PUSH2 0x133 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP1 PUSH2 0xC6 JUMPI POP PUSH1 0x0 SLOAD PUSH1 0xFF AND ISZERO JUMPDEST PUSH2 0xEB JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH2 0xE2 SWAP1 PUSH2 0x1C5 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND ISZERO DUP1 ISZERO PUSH2 0x10D JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFFFF NOT AND PUSH2 0x101 OR SWAP1 SSTORE JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH3 0xFF0000 NOT AND PUSH3 0x10000 OR SWAP1 SSTORE DUP1 ISZERO PUSH2 0x130 JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND SWAP1 SSTORE JUMPDEST POP JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP1 PUSH2 0x14C JUMPI POP PUSH1 0x0 SLOAD PUSH1 0xFF AND ISZERO JUMPDEST PUSH2 0x168 JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH2 0xE2 SWAP1 PUSH2 0x1C5 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND ISZERO DUP1 ISZERO PUSH2 0x18A JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFFFF NOT AND PUSH2 0x101 OR SWAP1 SSTORE JUMPDEST PUSH2 0x192 PUSH2 0xAD JUMP JUMPDEST PUSH1 0x1 DUP3 SWAP1 SSTORE DUP1 ISZERO PUSH2 0x1A9 JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND SWAP1 SSTORE JUMPDEST POP POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x1BE JUMPI DUP1 DUP2 REVERT JUMPDEST POP CALLDATALOAD SWAP2 SWAP1 POP JUMP JUMPDEST PUSH1 0x20 DUP1 DUP3 MSTORE PUSH1 0x2E SWAP1 DUP3 ADD MSTORE PUSH32 0x496E697469616C697A61626C653A20636F6E747261637420697320616C726561 PUSH1 0x40 DUP3 ADD MSTORE PUSH14 0x191E481A5B9A5D1A585B1A5E9959 PUSH1 0x92 SHL PUSH1 0x60 DUP3 ADD MSTORE PUSH1 0x80 ADD SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP2 PUSH32 0x20B0C4E2B1B3431C4EC56DD1732BF5CCAA56B7E671DAAFA8257D07ADD9B56473 PUSH16 0x6C634300080300330000000000000000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "MSTORE",
+      "path": "56"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "CALLVALUE",
+      "path": "56"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "ISZERO",
+      "path": "56"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPI",
+      "path": "56"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "REVERT",
+      "path": "56"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "POP",
+      "path": "56"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "CALLDATASIZE",
+      "path": "56"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "LT",
+      "path": "56"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x4C"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPI",
+      "path": "56"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "CALLDATALOAD",
+      "path": "56"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "SHR",
+      "path": "56"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH4",
+      "path": "56",
+      "value": "0x4A6C9DB6"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "EQ",
+      "path": "56"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x51"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPI",
+      "path": "56"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH4",
+      "path": "56",
+      "value": "0x8129FC1C"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "EQ",
+      "path": "56"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x79"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPI",
+      "path": "56"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH4",
+      "path": "56",
+      "value": "0xED7DFEE3"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "EQ",
+      "path": "56"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x83"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPI",
+      "path": "56"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH4",
+      "path": "56",
+      "value": "0xFE4B84DF"
+    },
+    "71": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "EQ",
+      "path": "56"
+    },
+    "72": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x9A"
+    },
+    "75": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPI",
+      "path": "56"
+    },
+    "76": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "77": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x0"
+    },
+    "79": {
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "80": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        681,
+        882
+      ],
+      "op": "REVERT",
+      "path": "56"
+    },
+    "81": {
+      "offset": [
+        514,
+        533
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "82": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x0"
+    },
+    "84": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "SLOAD",
+      "path": "56"
+    },
+    "85": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x64"
+    },
+    "88": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "SWAP1",
+      "path": "56"
+    },
+    "89": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "PUSH3",
+      "path": "56",
+      "value": "0x10000"
+    },
+    "93": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "SWAP1",
+      "path": "56"
+    },
+    "94": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "DIV",
+      "path": "56"
+    },
+    "95": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0xFF"
+    },
+    "97": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "AND",
+      "path": "56"
+    },
+    "98": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "DUP2",
+      "path": "56"
+    },
+    "99": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "100": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "101": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x40"
+    },
+    "103": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "MLOAD",
+      "path": "56"
+    },
+    "104": {
+      "op": "SWAP1"
+    },
+    "105": {
+      "op": "ISZERO"
+    },
+    "106": {
+      "op": "ISZERO"
+    },
+    "107": {
+      "op": "DUP2"
+    },
+    "108": {
+      "op": "MSTORE"
+    },
+    "109": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "111": {
+      "op": "ADD"
+    },
+    "112": {
+      "offset": [
+        514,
+        533
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "113": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x40"
+    },
+    "115": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "MLOAD",
+      "path": "56"
+    },
+    "116": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "117": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "SWAP2",
+      "path": "56"
+    },
+    "118": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "SUB",
+      "path": "56"
+    },
+    "119": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "SWAP1",
+      "path": "56"
+    },
+    "120": {
+      "fn": null,
+      "offset": [
+        514,
+        533
+      ],
+      "op": "RETURN",
+      "path": "56"
+    },
+    "121": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "122": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x81"
+    },
+    "125": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0xAD"
+    },
+    "128": {
+      "fn": "SampleHuman.initialize",
+      "jump": "i",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "129": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "130": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "STOP",
+      "path": "56"
+    },
+    "131": {
+      "offset": [
+        737,
+        758
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "132": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x8C"
+    },
+    "135": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x1"
+    },
+    "137": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "SLOAD",
+      "path": "56"
+    },
+    "138": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "DUP2",
+      "path": "56"
+    },
+    "139": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "140": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "141": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x40"
+    },
+    "143": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        737,
+        758
+      ],
+      "op": "MLOAD",
+      "path": "56"
+    },
+    "144": {
+      "op": "SWAP1"
+    },
+    "145": {
+      "op": "DUP2"
+    },
+    "146": {
+      "op": "MSTORE"
+    },
+    "147": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "149": {
+      "op": "ADD"
+    },
+    "150": {
+      "offset": [
+        737,
+        758
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x70"
+    },
+    "153": {
+      "op": "JUMP"
+    },
+    "154": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "155": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x81"
+    },
+    "158": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0xA8"
+    },
+    "161": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "CALLDATASIZE",
+      "path": "56"
+    },
+    "162": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "value": "0x4"
+    },
+    "164": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x1AD"
+    },
+    "167": {
+      "fn": "SampleMother.initialize",
+      "jump": "i",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "168": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "169": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0x133"
+    },
+    "172": {
+      "fn": "SampleMother.initialize",
+      "jump": "i",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "173": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "174": {
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "176": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "177": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x100"
+    },
+    "180": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "181": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "DIV",
+      "path": "77"
+    },
+    "182": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "184": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "185": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "186": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0xC6"
+    },
+    "189": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "190": {
+      "op": "POP"
+    },
+    "191": {
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "193": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "194": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "196": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "197": {
+      "offset": [
+        1512,
+        1525
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "198": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "199": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0xEB"
+    },
+    "202": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "203": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x40"
+    },
+    "205": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MLOAD",
+      "path": "77"
+    },
+    "206": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "210": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "212": {
+      "op": "SHL"
+    },
+    "213": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "DUP2",
+      "path": "77"
+    },
+    "214": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MSTORE",
+      "path": "77"
+    },
+    "215": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x4"
+    },
+    "217": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "ADD",
+      "path": "77"
+    },
+    "218": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0xE2"
+    },
+    "221": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "222": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x1C5"
+    },
+    "225": {
+      "fn": "SampleHuman.initialize",
+      "jump": "i",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMP",
+      "path": "77"
+    },
+    "226": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "227": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x40"
+    },
+    "229": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MLOAD",
+      "path": "77"
+    },
+    "230": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "231": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SWAP2",
+      "path": "77"
+    },
+    "232": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SUB",
+      "path": "77"
+    },
+    "233": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "234": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "REVERT",
+      "optimizer_revert": true,
+      "path": "77"
+    },
+    "235": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "236": {
+      "offset": [
+        1587,
+        1606
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "238": {
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "239": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x100"
+    },
+    "242": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "243": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "DIV",
+      "path": "77"
+    },
+    "244": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "246": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "247": {
+      "offset": [
+        1609,
+        1623
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "248": {
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "249": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "250": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x10D"
+    },
+    "253": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "254": {
+      "offset": [
+        1667,
+        1680
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "256": {
+      "offset": [
+        1667,
+        1687
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "257": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1667,
+        1687
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "258": {
+      "op": "PUSH2",
+      "value": "0xFFFF"
+    },
+    "261": {
+      "op": "NOT"
+    },
+    "262": {
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "263": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x101"
+    },
+    "266": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "OR",
+      "path": "77"
+    },
+    "267": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "268": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "SSTORE",
+      "path": "77"
+    },
+    "269": {
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "270": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        592
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "statement": 0,
+      "value": "0x0"
+    },
+    "272": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "DUP1",
+      "path": "56"
+    },
+    "273": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "SLOAD",
+      "path": "56"
+    },
+    "274": {
+      "op": "PUSH3",
+      "value": "0xFF0000"
+    },
+    "278": {
+      "op": "NOT"
+    },
+    "279": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "AND",
+      "path": "56"
+    },
+    "280": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "PUSH3",
+      "path": "56",
+      "value": "0x10000"
+    },
+    "284": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "OR",
+      "path": "56"
+    },
+    "285": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "SWAP1",
+      "path": "56"
+    },
+    "286": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        585,
+        599
+      ],
+      "op": "SSTORE",
+      "path": "56"
+    },
+    "287": {
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "288": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "289": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x130"
+    },
+    "292": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "293": {
+      "offset": [
+        1803,
+        1808
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "295": {
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "296": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "297": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "300": {
+      "op": "NOT"
+    },
+    "301": {
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "302": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "303": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SSTORE",
+      "path": "77"
+    },
+    "304": {
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "305": {
+      "fn": "SampleHuman.initialize",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "POP",
+      "path": "56"
+    },
+    "306": {
+      "fn": "SampleHuman.initialize",
+      "jump": "o",
+      "offset": [
+        538,
+        604
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "307": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "308": {
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "310": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "311": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x100"
+    },
+    "314": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "315": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "DIV",
+      "path": "77"
+    },
+    "316": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "318": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "319": {
+      "branch": 3,
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1495,
+        1508
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "320": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x14C"
+    },
+    "323": {
+      "branch": 3,
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "324": {
+      "op": "POP"
+    },
+    "325": {
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "327": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "328": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "330": {
+      "branch": 4,
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1513,
+        1525
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "331": {
+      "offset": [
+        1512,
+        1525
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "332": {
+      "offset": [
+        1495,
+        1525
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "333": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x168"
+    },
+    "336": {
+      "branch": 4,
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "337": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x40"
+    },
+    "339": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MLOAD",
+      "path": "77"
+    },
+    "340": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "344": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "346": {
+      "op": "SHL"
+    },
+    "347": {
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "DUP2",
+      "path": "77"
+    },
+    "348": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "MSTORE",
+      "path": "77"
+    },
+    "349": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x4"
+    },
+    "351": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "ADD",
+      "path": "77"
+    },
+    "352": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0xE2"
+    },
+    "355": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "356": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x1C5"
+    },
+    "359": {
+      "fn": "SampleMother.initialize",
+      "jump": "i",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMP",
+      "path": "77"
+    },
+    "360": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1487,
+        1576
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "361": {
+      "offset": [
+        1587,
+        1606
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "363": {
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "364": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x100"
+    },
+    "367": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "368": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "DIV",
+      "path": "77"
+    },
+    "369": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0xFF"
+    },
+    "371": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1610,
+        1623
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "372": {
+      "offset": [
+        1609,
+        1623
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "373": {
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "374": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "375": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x18A"
+    },
+    "378": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "379": {
+      "offset": [
+        1667,
+        1680
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "381": {
+      "offset": [
+        1667,
+        1687
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "382": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1667,
+        1687
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "383": {
+      "op": "PUSH2",
+      "value": "0xFFFF"
+    },
+    "386": {
+      "op": "NOT"
+    },
+    "387": {
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "388": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x101"
+    },
+    "391": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "OR",
+      "path": "77"
+    },
+    "392": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "393": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1701,
+        1720
+      ],
+      "op": "SSTORE",
+      "path": "77"
+    },
+    "394": {
+      "offset": [
+        1633,
+        1731
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "395": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        831,
+        855
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "statement": 1,
+      "value": "0x192"
+    },
+    "398": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        831,
+        853
+      ],
+      "op": "PUSH2",
+      "path": "56",
+      "value": "0xAD"
+    },
+    "401": {
+      "fn": "SampleMother.initialize",
+      "jump": "i",
+      "offset": [
+        831,
+        855
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "402": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        831,
+        855
+      ],
+      "op": "JUMPDEST",
+      "path": "56"
+    },
+    "403": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        861,
+        867
+      ],
+      "op": "PUSH1",
+      "path": "56",
+      "statement": 2,
+      "value": "0x1"
+    },
+    "405": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        861,
+        875
+      ],
+      "op": "DUP3",
+      "path": "56"
+    },
+    "406": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        861,
+        875
+      ],
+      "op": "SWAP1",
+      "path": "56"
+    },
+    "407": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        861,
+        875
+      ],
+      "op": "SSTORE",
+      "path": "56"
+    },
+    "408": {
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "409": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "ISZERO",
+      "path": "77"
+    },
+    "410": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "PUSH2",
+      "path": "77",
+      "value": "0x1A9"
+    },
+    "413": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "JUMPI",
+      "path": "77"
+    },
+    "414": {
+      "offset": [
+        1803,
+        1808
+      ],
+      "op": "PUSH1",
+      "path": "77",
+      "value": "0x0"
+    },
+    "416": {
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "DUP1",
+      "path": "77"
+    },
+    "417": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SLOAD",
+      "path": "77"
+    },
+    "418": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "421": {
+      "op": "NOT"
+    },
+    "422": {
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "AND",
+      "path": "77"
+    },
+    "423": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SWAP1",
+      "path": "77"
+    },
+    "424": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        1787,
+        1808
+      ],
+      "op": "SSTORE",
+      "path": "77"
+    },
+    "425": {
+      "offset": [
+        1753,
+        1819
+      ],
+      "op": "JUMPDEST",
+      "path": "77"
+    },
+    "426": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "POP",
+      "path": "56"
+    },
+    "427": {
+      "fn": "SampleMother.initialize",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "POP",
+      "path": "56"
+    },
+    "428": {
+      "fn": "SampleMother.initialize",
+      "jump": "o",
+      "offset": [
+        763,
+        880
+      ],
+      "op": "JUMP",
+      "path": "56"
+    },
+    "429": {
+      "op": "JUMPDEST"
+    },
+    "430": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "432": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "434": {
+      "op": "DUP3"
+    },
+    "435": {
+      "op": "DUP5"
+    },
+    "436": {
+      "op": "SUB"
+    },
+    "437": {
+      "op": "SLT"
+    },
+    "438": {
+      "op": "ISZERO"
+    },
+    "439": {
+      "op": "PUSH2",
+      "value": "0x1BE"
+    },
+    "442": {
+      "op": "JUMPI"
+    },
+    "443": {
+      "op": "DUP1"
+    },
+    "444": {
+      "op": "DUP2"
+    },
+    "445": {
+      "op": "REVERT"
+    },
+    "446": {
+      "op": "JUMPDEST"
+    },
+    "447": {
+      "op": "POP"
+    },
+    "448": {
+      "op": "CALLDATALOAD"
+    },
+    "449": {
+      "op": "SWAP2"
+    },
+    "450": {
+      "op": "SWAP1"
+    },
+    "451": {
+      "op": "POP"
+    },
+    "452": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "453": {
+      "op": "JUMPDEST"
+    },
+    "454": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "456": {
+      "op": "DUP1"
+    },
+    "457": {
+      "op": "DUP3"
+    },
+    "458": {
+      "op": "MSTORE"
+    },
+    "459": {
+      "op": "PUSH1",
+      "value": "0x2E"
+    },
+    "461": {
+      "op": "SWAP1"
+    },
+    "462": {
+      "op": "DUP3"
+    },
+    "463": {
+      "op": "ADD"
+    },
+    "464": {
+      "op": "MSTORE"
+    },
+    "465": {
+      "op": "PUSH32",
+      "value": "0x496E697469616C697A61626C653A20636F6E747261637420697320616C726561"
+    },
+    "498": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "500": {
+      "op": "DUP3"
+    },
+    "501": {
+      "op": "ADD"
+    },
+    "502": {
+      "op": "MSTORE"
+    },
+    "503": {
+      "op": "PUSH14",
+      "value": "0x191E481A5B9A5D1A585B1A5E9959"
+    },
+    "518": {
+      "op": "PUSH1",
+      "value": "0x92"
+    },
+    "520": {
+      "op": "SHL"
+    },
+    "521": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "523": {
+      "op": "DUP3"
+    },
+    "524": {
+      "op": "ADD"
+    },
+    "525": {
+      "op": "MSTORE"
+    },
+    "526": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "528": {
+      "op": "ADD"
+    },
+    "529": {
+      "op": "SWAP1"
+    },
+    "530": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "39d79f69afd47c1488b1d7d476075f903174b109",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport \"../proxy/utils/Initializable.sol\";\n\n// Sample contracts showing upgradeability with multiple inheritance.\n// Child contract inherits from Father and Mother contracts, and Father extends from Gramps.\n//\n//         Human\n//       /       \\\n//      |       Gramps\n//      |         |\n//    Mother    Father\n//      |         |\n//      -- Child --\n\n/**\n * Sample base intializable contract that is a human\n */\ncontract SampleHuman is Initializable {\n  bool public isHuman;\n\n  function initialize() public initializer {\n    isHuman = true;\n  }\n}\n\n/**\n * Sample base intializable contract that defines a field mother\n */\ncontract SampleMother is Initializable, SampleHuman {\n  uint256 public mother;\n\n  function initialize(uint256 value) public initializer virtual {\n    SampleHuman.initialize();\n    mother = value;\n  }\n}\n\n/**\n * Sample base intializable contract that defines a field gramps\n */\ncontract SampleGramps is Initializable, SampleHuman {\n  string public gramps;\n\n  function initialize(string memory value) public initializer virtual {\n    SampleHuman.initialize();\n    gramps = value;\n  }\n}\n\n/**\n * Sample base intializable contract that defines a field father and extends from gramps\n */\ncontract SampleFather is Initializable, SampleGramps {\n  uint256 public father;\n\n  function initialize(string memory _gramps, uint256 _father) public initializer {\n    SampleGramps.initialize(_gramps);\n    father = _father;\n  }\n}\n\n/**\n * Child extends from mother, father (gramps)\n */\ncontract SampleChild is Initializable, SampleMother, SampleFather {\n  uint256 public child;\n\n  function initialize(uint256 _mother, string memory _gramps, uint256 _father, uint256 _child) public initializer {\n    SampleMother.initialize(_mother);\n    SampleFather.initialize(_gramps, _father);\n    child = _child;\n  }\n}\n",
+  "sourceMap": "681:201:56:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts/contracts/mocks/MultipleInheritanceInitializableMocks.sol",
+  "type": "contract"
+}

@@ -1,0 +1,690 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "28": "contracts/openzeppelin-contracts/contracts/mocks/ERC165/ERC165MissingData.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts/contracts/mocks/ERC165/ERC165MissingData.sol",
+    "exportedSymbols": {
+      "ERC165MissingData": [
+        3320
+      ]
+    },
+    "id": 3321,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3313,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:28"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3320,
+        "linearizedBaseContracts": [
+          3320
+        ],
+        "name": "ERC165MissingData",
+        "nameLocation": "67:17:28",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3318,
+              "nodeType": "Block",
+              "src": "150:2:28",
+              "statements": []
+            },
+            "functionSelector": "01ffc9a7",
+            "id": 3319,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsInterface",
+            "nameLocation": "100:17:28",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3316,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3315,
+                  "mutability": "mutable",
+                  "name": "interfaceId",
+                  "nameLocation": "125:11:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3319,
+                  "src": "118:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 3314,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "118:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "117:20:28"
+            },
+            "returnParameters": {
+              "id": 3317,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "150:0:28"
+            },
+            "scope": 3320,
+            "src": "91:61:28",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3321,
+        "src": "58:114:28"
+      }
+    ],
+    "src": "33:140:28"
+  },
+  "bytecode": "6080604052348015600f57600080fd5b5060a08061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b603b6038366004603d565b50565b005b600060208284031215604d578081fd5b81356001600160e01b0319811681146063578182fd5b939250505056fea264697066735822122024010c7ab01abf7bab75bf91b66758bc83fbace62700f0cfec86bf09ed4801aa64736f6c63430008030033",
+  "bytecodeSha1": "dcb99edccbe5863d06364e7ed4440b4ab112af91",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.3+commit.8d00100c"
+  },
+  "contractName": "ERC165MissingData",
+  "coverageMap": {
+    "branches": {
+      "28": {}
+    },
+    "statements": {
+      "28": {}
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b603b6038366004603d565b50565b005b600060208284031215604d578081fd5b81356001600160e01b0319811681146063578182fd5b939250505056fea264697066735822122024010c7ab01abf7bab75bf91b66758bc83fbace62700f0cfec86bf09ed4801aa64736f6c63430008030033",
+  "deployedSourceMap": "58:114:28:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:61;;;;;;:::i;:::-;;;;;14:306:144;;125:2;113:9;104:7;100:23;96:32;93:2;;;146:6;138;131:22;93:2;177:23;;-1:-1:-1;;;;;;229:32:144;;219:43;;209:2;;281:6;273;266:22;209:2;309:5;83:237;-1:-1:-1;;;83:237:144:o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    58,
+    172
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x1FFC9A7 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3B PUSH1 0x38 CALLDATASIZE PUSH1 0x4 PUSH1 0x3D JUMP JUMPDEST POP JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH1 0x4D JUMPI DUP1 DUP2 REVERT JUMPDEST DUP2 CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT DUP2 AND DUP2 EQ PUSH1 0x63 JUMPI DUP2 DUP3 REVERT JUMPDEST SWAP4 SWAP3 POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x24 ADD 0xC PUSH27 0xB01ABF7BAB75BF91B66758BC83FBACE62700F0CFEC86BF09ED4801 0xAA PUSH5 0x736F6C6343 STOP ADDMOD SUB STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "CALLVALUE",
+      "path": "28"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0xF"
+    },
+    "10": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "13": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "14": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "CALLDATASIZE",
+      "path": "28"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "LT",
+      "path": "28"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x28"
+    },
+    "23": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "24": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "CALLDATALOAD",
+      "path": "28"
+    },
+    "27": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0xE0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "SHR",
+      "path": "28"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH4",
+      "path": "28",
+      "value": "0x1FFC9A7"
+    },
+    "36": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "EQ",
+      "path": "28"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x2D"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "40": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "41": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "44": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        58,
+        172
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "45": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "46": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x3B"
+    },
+    "48": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x38"
+    },
+    "50": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "CALLDATASIZE",
+      "path": "28"
+    },
+    "51": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "53": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x3D"
+    },
+    "55": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "jump": "i",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "JUMP",
+      "path": "28"
+    },
+    "56": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "57": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "58": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "JUMP",
+      "path": "28"
+    },
+    "59": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "60": {
+      "fn": "ERC165MissingData.supportsInterface",
+      "offset": [
+        91,
+        152
+      ],
+      "op": "STOP",
+      "path": "28"
+    },
+    "61": {
+      "op": "JUMPDEST"
+    },
+    "62": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "64": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "66": {
+      "op": "DUP3"
+    },
+    "67": {
+      "op": "DUP5"
+    },
+    "68": {
+      "op": "SUB"
+    },
+    "69": {
+      "op": "SLT"
+    },
+    "70": {
+      "op": "ISZERO"
+    },
+    "71": {
+      "op": "PUSH1",
+      "value": "0x4D"
+    },
+    "73": {
+      "op": "JUMPI"
+    },
+    "74": {
+      "op": "DUP1"
+    },
+    "75": {
+      "op": "DUP2"
+    },
+    "76": {
+      "op": "REVERT"
+    },
+    "77": {
+      "op": "JUMPDEST"
+    },
+    "78": {
+      "op": "DUP2"
+    },
+    "79": {
+      "op": "CALLDATALOAD"
+    },
+    "80": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "82": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "84": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "86": {
+      "op": "SHL"
+    },
+    "87": {
+      "op": "SUB"
+    },
+    "88": {
+      "op": "NOT"
+    },
+    "89": {
+      "op": "DUP2"
+    },
+    "90": {
+      "op": "AND"
+    },
+    "91": {
+      "op": "DUP2"
+    },
+    "92": {
+      "op": "EQ"
+    },
+    "93": {
+      "op": "PUSH1",
+      "value": "0x63"
+    },
+    "95": {
+      "op": "JUMPI"
+    },
+    "96": {
+      "op": "DUP2"
+    },
+    "97": {
+      "op": "DUP3"
+    },
+    "98": {
+      "op": "REVERT"
+    },
+    "99": {
+      "op": "JUMPDEST"
+    },
+    "100": {
+      "op": "SWAP4"
+    },
+    "101": {
+      "op": "SWAP3"
+    },
+    "102": {
+      "op": "POP"
+    },
+    "103": {
+      "op": "POP"
+    },
+    "104": {
+      "op": "POP"
+    },
+    "105": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "e5a901e970cb9cf947ca2a049cc16cb178ff9619",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\ncontract ERC165MissingData {\n    function supportsInterface(bytes4 interfaceId) public view {} // missing return\n}\n",
+  "sourceMap": "58:114:28:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts/contracts/mocks/ERC165/ERC165MissingData.sol",
+  "type": "contract"
+}
