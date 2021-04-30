@@ -242,52 +242,47 @@ with the Id of the recipe */
 
     function _updateStarterScore(uint256 _starterId) internal {
         uint index = 0;
-        uint32 starterAge = uint32(block.timestamp)-Sourdoughs[_starterId]._creationTime;
+        bool isOnList = false;
+        while(index<10){
+            if(starterHighScore[index]==_starterId){
+                isOnList=true;
+                break;
+            }
+            index=index+1;
+        }
+
+        if(isOnList){
+            while(index<10){
+                starterHighScore[index]=starterHighScore[index+1];
+                starterHighScoreAges[index]=starterHighScoreAges[index+1];
+                index=index+1;
+            }
+        }
+        index =0;
         uint32 toBeat = starterHighScoreAges[index];
-        while(starterAge <= toBeat){
-            index = index + 1;
+        uint32 score = uint32( block.timestamp - Sourdoughs[_starterId]._creationTime );
+        while(score <= toBeat){
+            index=index+1;
             if(index>10){
                 break;
             }else{
-        toBeat = starterHighScoreAges[index];}
+                toBeat = starterHighScoreAges[index];
+            }
         }
-        if(index<10 && index !=0){
-            if(starterHighScore[index-1]==_starterId){
-                starterHighScore[index-1] = _starterId;
-                starterHighScoreAges[index-1] = starterAge;
-            }else{
-            uint j = 9;
-            while(j>=index){
-                starterHighScoreAges[j+1]=starterHighScoreAges[j];
-                starterHighScore[j+1] = starterHighScore[j];
-                if(j!=0){
-                j=j-1;}
+
+        if(index<10){
+            uint index2 =9;
+            while(index2>=index){
+                starterHighScore[index2+1] = starterHighScore[index2];
+                starterHighScoreAges[index2+1]=starterHighScoreAges[index2];
+                if(index2!=0){
+                index2=index2-1;}
                 else{
                     break;
                 }
             }
-            starterHighScore[index] = _starterId;
-            starterHighScoreAges[index] = starterAge;
-        }}else if(index==0){
-             if(starterHighScore[index]==_starterId){
-                 starterHighScore[index] = _starterId;
-                 starterHighScoreAges[index] = starterAge;
-             } 
-             else{
-                 uint j=9;
-                 while(j>=0){
-                     starterHighScoreAges[j+1]=starterHighScoreAges[j];
-                     starterHighScore[j+1] = starterHighScore[j];
-                     if(j!=0){
-                     j=j-1;}else{
-                         break;
-                     }
-                 }
-                 starterHighScore[index] = _starterId;
-                 starterHighScoreAges[index] = starterAge;
-             }
-             
-
+            starterHighScore[index]= _starterId;
+            starterHighScoreAges[index]=score;
         }
     }
     
@@ -299,90 +294,90 @@ with the Id of the recipe */
 
     function _updateRecipeScore(uint256 _recipeId) internal {
         uint index = 0;
-        uint256 score = BakedGoods[_recipeId]._timesBaked;
-        uint256 toBeat = BakedGoods[recipeHighScore[index]]._timesBaked;
-        while(score<=toBeat){
-            index = index+1;
-            if(index>10){
+        bool isOnList = false;
+        while(index<10){
+            if(recipeHighScore[index]==_recipeId){
+                isOnList=true;
                 break;
             }
-            else{
-                toBeat= BakedGoods[recipeHighScore[index]]._timesBaked;}
+            index=index+1;
         }
-        if(index<10 && index !=0){
-            if(recipeHighScore[index-1]==_recipeId){
-                 recipeHighScore[index-1]=_recipeId;
+
+        if(isOnList){
+            while(index<10){
+                recipeHighScore[index]=recipeHighScore[index+1];
+                index=index+1;
+            }
+        }
+
+        index=0;
+        uint256 score = BakedGoods[_recipeId]._timesBaked;
+        uint256 toBeat = BakedGoods[recipeHighScore[index]]._timesBaked;
+        while(score <= toBeat){
+            index=index+1;
+            if(index>10){
+                break;
             }else{
-            uint j=9;
-            while(j>=index){
-                recipeHighScore[j+1]=recipeHighScore[j];
-                if(j!=0){
-                j=j-1;}
+                toBeat = BakedGoods[recipeHighScore[index]]._timesBaked;
+            }
+        }
+
+        if(index<10){
+            uint index2 = 9;
+            while(index2>=index){
+                recipeHighScore[index2+1]=recipeHighScore[index2];
+                if(index2!=0){
+                index2=index2-1;}
                 else{
                     break;
                 }
             }
             recipeHighScore[index]=_recipeId;
-        }}else if(index==0){
-            if(recipeHighScore[0]==_recipeId){
-                recipeHighScore[0]=_recipeId;
-                }else{
-                    uint j=9;
-                     while(j>=0){
-                    recipeHighScore[j+1]=recipeHighScore[j];
-                    if(j!=0){
-                    j=j-1;}else{
-                        break;
-                    }
-                    }
-                    recipeHighScore[0]=_recipeId;
-                } 
-                }
-    }
+        }
+   }
     
 
     function _updatePlayerScore(address _player) internal {
         uint index = 0;
+        bool isOnList = false;
+        while(index<10){
+            if(playerHighScore[index]==_player){
+                isOnList=true;
+                break;
+            }
+            index=index+1;
+        }
+        if(isOnList){
+            while(index<10){
+                playerHighScore[index]=playerHighScore[index+1];
+                index=index+1;
+            }
+        }
+        index=0;
         uint256 score = totalScore[_player];
         uint256 toBeat = totalScore[playerHighScore[index]];
         while(score<=toBeat){
             index=index+1;
             if(index>10){
                 break;
-            }
-            else{
+            }else{
                 toBeat = totalScore[playerHighScore[index]];
             }
         }
-        if(index<10 && index!=0){
-            if(playerHighScore[index-1]==_player){
-                playerHighScore[index-1]=_player;
-            }else{
-            uint j=9;
-            while(j>=index){
-                playerHighScore[j+1] = playerHighScore[j];
-                if(j!=0){
-                j=j-1;}else{
+        if(index<10){
+            uint index2 =9;
+            while(index2>=index){
+                playerHighScore[index2+1]=playerHighScore[index2];
+                if(index2!=0){
+                index2=index2-1;}
+                else{
                     break;
                 }
             }
             playerHighScore[index]=_player;
-        }}else if (index==0){
-             if(playerHighScore[0]==_player){
-                 playerHighScore[index]=_player;
-             }else{
-                uint j=9;
-                while(j>=0){
-                    playerHighScore[j+1] = playerHighScore[j];   
-                    if(j!=0){
-                    j=j-1;}else{
-                        break;
-                    }
-             }
-             playerHighScore[index]=_player; 
         }
     }
-    }
+
 
 
 
